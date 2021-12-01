@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{D201BDE3-CD26-4348-8C08-B2979D203E64}</ProjectGuid>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ProjetProgrammationOrientéeObjetProgramme</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>WinMain</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Connexion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CreationFacture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MabTB-Paiement.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Adresse.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Article.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Catalogue.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Clients.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Commande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Facture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Facturer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Paiement.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Personnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Posseder.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-SimVar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Stats.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB-Ville.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MapTB.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Service-Adresse.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Article.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Catalogue.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Clients.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Commande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Facture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Facturer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Paiement.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Personnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Posseder.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-SimVar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Stats.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Service-Ville.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueAdresses.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueCatalogue.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueClients.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueCommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueFacture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueFacturePDF.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueFacturer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VuePaiement.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VuePersonnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VuePosseder.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueSimVar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueStats.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueVille.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Connexion.cpp" />
+    <ClCompile Include="MabTB-Paiement.cpp" />
+    <ClCompile Include="MapTB-Adresse.cpp" />
+    <ClCompile Include="MapTB-Article.cpp" />
+    <ClCompile Include="MapTB-Catalogue.cpp" />
+    <ClCompile Include="MapTB-Clients.cpp" />
+    <ClCompile Include="MapTB-Commande.cpp" />
+    <ClCompile Include="MapTB-Facture.cpp" />
+    <ClCompile Include="MapTB-Facturer.cpp" />
+    <ClCompile Include="MapTB-Personnel.cpp" />
+    <ClCompile Include="MapTB-Posseder.cpp" />
+    <ClCompile Include="MapTB-SimVar.cpp" />
+    <ClCompile Include="MapTB-Stats.cpp" />
+    <ClCompile Include="MapTB-Ville.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Service-Adresse.cpp" />
+    <ClCompile Include="Service-Article.cpp" />
+    <ClCompile Include="Service-Catalogue.cpp" />
+    <ClCompile Include="Service-Clients.cpp" />
+    <ClCompile Include="Service-Commande.cpp" />
+    <ClCompile Include="Service-Facture.cpp" />
+    <ClCompile Include="Service-Facturer.cpp" />
+    <ClCompile Include="Service-Paiement.cpp" />
+    <ClCompile Include="Service-Personnel.cpp" />
+    <ClCompile Include="Service-Posseder.cpp" />
+    <ClCompile Include="Service-SimVar.cpp" />
+    <ClCompile Include="Service-Stats.cpp" />
+    <ClCompile Include="Service-Ville.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.2.Core">
+      <HintPath>DevExpress.Charts.v21.2.Core</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.2">
+      <HintPath>DevExpress.Data.Desktop.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.2">
+      <HintPath>DevExpress.Data.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.2.Core">
+      <HintPath>DevExpress.Pdf.v21.2.Core</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.2.Drawing">
+      <HintPath>DevExpress.Pdf.v21.2.Drawing</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.2.Core">
+      <HintPath>DevExpress.Printing.v21.2.Core</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2">
+      <HintPath>DevExpress.Utils.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2.UI">
+      <HintPath>DevExpress.Utils.v21.2.UI</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v21.2">
+      <HintPath>DevExpress.XtraBars.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.2">
+      <HintPath>DevExpress.XtraCharts.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI">
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraCharts.v21.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard">
+      <HintPath>DevExpress.XtraCharts.v21.2.Wizard</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v21.2">
+      <HintPath>DevExpress.XtraEditors.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v21.2">
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraNavBar.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v21.2">
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraPdfViewer.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.2">
+      <HintPath>DevExpress.XtraPrinting.v21.2</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v21.2">
+      <HintPath>DevExpress.XtraTreeList.v21.2</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions">
+      <HintPath>Bibliothèque\Transitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreationFacture.resx">
+      <DependentUpon>CreationFacture.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapTB-Facture.resx">
+      <DependentUpon>MapTB-Facture.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueAdresses.resx">
+      <DependentUpon>VueAdresses.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueCatalogue.resx">
+      <DependentUpon>VueCatalogue.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueClients.resx">
+      <DependentUpon>VueClients.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueCommande.resx">
+      <DependentUpon>VueCommande.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueFacture.resx">
+      <DependentUpon>VueFacture.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueFacturePDF.resx">
+      <DependentUpon>VueFacturePDF.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VuePersonnel.resx">
+      <DependentUpon>VuePersonnel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueSimVar.resx">
+      <DependentUpon>VueSimVar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueStats.resx">
+      <DependentUpon>VueStats.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueVille.resx">
+      <DependentUpon>VueVille.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="licenses.licx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
