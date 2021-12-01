@@ -2,7 +2,7 @@
 
 namespace NS_Comp_Data
 {
-	ref class CLcad /*FYGFGFHGHGDGBF*/
+	ref class CLcad 
 	{
 	private:
 		System::String^ sSql;
