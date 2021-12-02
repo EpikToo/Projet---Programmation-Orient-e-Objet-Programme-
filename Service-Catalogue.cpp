@@ -15,7 +15,7 @@ System::Data::DataSet^ NS_Comp_Svc4::CLservices::selectionnerTout(System::String
 
 void NS_Comp_Svc4::CLservices::ajouterUnCatalogue(System::Int32^ quantite, System::Int32^ seuil)
 {
-	System::String^ con = "Data Source=FLORIAN\\MSSQL_FLORIAN;Initial Catalog=ProjetPOO;User ID=cnx_6;Password=Mdp123; Integrated Security=True";
+	System::String^ con = "Data Source = LAPTOP-U9N5DUUS\\MSSQL_FLO;Initial Catalog = POOP;Integrated Security=True";
 	System::Data::SqlClient::SqlConnection connect(con);
 	System::Data::SqlClient::SqlCommand^ commande;
 	commande = connect.CreateCommand();
