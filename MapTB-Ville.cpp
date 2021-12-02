@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage2::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [Prosit6].[dbo].[Ville]";
+	return "SELECT * FROM [dbo].[Ville]";
 }
 System::String^ NS_Comp_Mappage2::CLmapTB::Insert(void)
 {
@@ -11,11 +11,11 @@ System::String^ NS_Comp_Mappage2::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage2::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [Prosit6].[dbo].[Ville] WHERE nom_ville = ('" + this->ville + "')";
+	return "DELETE FROM [dbo].[Ville] WHERE nom_ville = ('" + this->ville + "')";
 }
 System::String^ NS_Comp_Mappage2::CLmapTB::Update(void)
 {
-	return "UPDATE [Prosit6].[dbo].[Catalogue] SET nom_ville = '" + this->ville + "', code_postal = '" + this->code_postal + "', pays = '" + this->pays + "' WHERE nom_ville = ('" + this->ville + "')";
+	return "UPDATE [dbo].[Catalogue] SET nom_ville = '" + this->ville + "', code_postal = '" + this->code_postal + "', pays = '" + this->pays + "' WHERE nom_ville = ('" + this->ville + "')";
 }
 void NS_Comp_Mappage2::CLmapTB::setVille(System::String^ ville)
 {
