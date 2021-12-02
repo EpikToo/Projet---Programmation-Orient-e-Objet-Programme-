@@ -211,7 +211,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_load
 			// 
-			this->btn_load->BackColor = System::Drawing::Color::White;
+			this->btn_load->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_load->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_load.BackgroundImage")));
 			this->btn_load->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->btn_load->Location = System::Drawing::Point(13, 19);
@@ -223,37 +223,38 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_insert
 			// 
-			this->btn_insert->BackColor = System::Drawing::Color::White;
+			this->btn_insert->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_insert->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->btn_insert->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_insert.Image")));
 			this->btn_insert->ImageAlign = System::Drawing::ContentAlignment::TopCenter;
-			this->btn_insert->Location = System::Drawing::Point(21, 124);
+			this->btn_insert->Location = System::Drawing::Point(14, 124);
 			this->btn_insert->Name = L"btn_insert";
-			this->btn_insert->Size = System::Drawing::Size(80, 79);
+			this->btn_insert->Size = System::Drawing::Size(86, 83);
 			this->btn_insert->TabIndex = 2;
 			this->btn_insert->UseVisualStyleBackColor = false;
 			this->btn_insert->Click += gcnew System::EventHandler(this, &VueClients::btn_insert_Click);
 			// 
 			// btn_delete
 			// 
-			this->btn_delete->BackColor = System::Drawing::Color::White;
+			this->btn_delete->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_delete->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_delete.BackgroundImage")));
 			this->btn_delete->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
-			this->btn_delete->Location = System::Drawing::Point(21, 338);
+			this->btn_delete->Location = System::Drawing::Point(14, 338);
 			this->btn_delete->Name = L"btn_delete";
-			this->btn_delete->Size = System::Drawing::Size(79, 76);
+			this->btn_delete->Size = System::Drawing::Size(86, 76);
 			this->btn_delete->TabIndex = 3;
 			this->btn_delete->UseVisualStyleBackColor = false;
 			this->btn_delete->Click += gcnew System::EventHandler(this, &VueClients::btn_delete_Click);
 			// 
 			// btn_update
 			// 
+			this->btn_update->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_update->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_update.Image")));
-			this->btn_update->Location = System::Drawing::Point(21, 231);
+			this->btn_update->Location = System::Drawing::Point(14, 231);
 			this->btn_update->Name = L"btn_update";
-			this->btn_update->Size = System::Drawing::Size(79, 81);
+			this->btn_update->Size = System::Drawing::Size(86, 81);
 			this->btn_update->TabIndex = 4;
-			this->btn_update->UseVisualStyleBackColor = true;
+			this->btn_update->UseVisualStyleBackColor = false;
 			this->btn_update->Click += gcnew System::EventHandler(this, &VueClients::btn_update_Click);
 			// 
 			// txt_id
@@ -291,7 +292,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label4->BackColor = System::Drawing::Color::Transparent;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label4->ForeColor = System::Drawing::Color::Black;
 			this->label4->Location = System::Drawing::Point(616, 568);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(74, 29);
@@ -340,12 +341,13 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button2
 			// 
+			this->button2->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button2->Location = System::Drawing::Point(865, 552);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(172, 57);
 			this->button2->TabIndex = 20;
 			this->button2->Text = L"Accès au menu";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &VueClients::button2_Click_1);
 			// 
 			// txt_telephone
@@ -391,7 +393,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->label9->AutoSize = true;
 			this->label9->BackColor = System::Drawing::Color::Transparent;
-			this->label9->ForeColor = System::Drawing::Color::MidnightBlue;
+			this->label9->ForeColor = System::Drawing::Color::Black;
 			this->label9->Location = System::Drawing::Point(36, 101);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(44, 13);
@@ -402,7 +404,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->label8->AutoSize = true;
 			this->label8->BackColor = System::Drawing::Color::Transparent;
-			this->label8->ForeColor = System::Drawing::Color::MidnightBlue;
+			this->label8->ForeColor = System::Drawing::Color::Black;
 			this->label8->Location = System::Drawing::Point(34, 420);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(54, 13);
@@ -413,7 +415,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->label7->AutoSize = true;
 			this->label7->BackColor = System::Drawing::Color::Transparent;
-			this->label7->ForeColor = System::Drawing::Color::MidnightBlue;
+			this->label7->ForeColor = System::Drawing::Color::Black;
 			this->label7->Location = System::Drawing::Point(38, 315);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(44, 13);
@@ -424,7 +426,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->label6->AutoSize = true;
 			this->label6->BackColor = System::Drawing::Color::Transparent;
-			this->label6->ForeColor = System::Drawing::Color::MidnightBlue;
+			this->label6->ForeColor = System::Drawing::Color::Black;
 			this->label6->Location = System::Drawing::Point(35, 206);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(51, 13);
@@ -447,7 +449,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label10->BackColor = System::Drawing::Color::Transparent;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label10->ForeColor = System::Drawing::Color::Black;
 			this->label10->Location = System::Drawing::Point(2, 249);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(72, 26);
@@ -460,7 +462,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label11->BackColor = System::Drawing::Color::Transparent;
 			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label11->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label11->ForeColor = System::Drawing::Color::Black;
 			this->label11->Location = System::Drawing::Point(4, 219);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(73, 16);
@@ -473,7 +475,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label12->BackColor = System::Drawing::Color::Transparent;
 			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label12->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label12->ForeColor = System::Drawing::Color::Black;
 			this->label12->Location = System::Drawing::Point(32, 186);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(41, 16);
@@ -486,7 +488,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label1->ForeColor = System::Drawing::Color::Black;
 			this->label1->Location = System::Drawing::Point(29, 154);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(44, 16);
@@ -499,7 +501,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label2->ForeColor = System::Drawing::Color::Black;
 			this->label2->Location = System::Drawing::Point(37, 51);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(40, 16);
@@ -512,7 +514,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label3->ForeColor = System::Drawing::Color::Black;
 			this->label3->Location = System::Drawing::Point(23, 122);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(54, 16);
@@ -525,7 +527,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label5->BackColor = System::Drawing::Color::Transparent;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label5->ForeColor = System::Drawing::Color::Black;
 			this->label5->Location = System::Drawing::Point(37, 85);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(36, 16);
@@ -538,7 +540,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label13->BackColor = System::Drawing::Color::Transparent;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label13->ForeColor = System::Drawing::Color::Black;
 			this->label13->Location = System::Drawing::Point(48, 17);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(20, 16);
@@ -580,7 +582,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label15->BackColor = System::Drawing::Color::Transparent;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label15->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label15->ForeColor = System::Drawing::Color::Black;
 			this->label15->Location = System::Drawing::Point(4, 285);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(74, 16);
@@ -600,7 +602,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label16->BackColor = System::Drawing::Color::Transparent;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label16->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label16->ForeColor = System::Drawing::Color::Black;
 			this->label16->Location = System::Drawing::Point(2, 312);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(77, 16);
@@ -634,7 +636,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label17->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label17->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label17->ForeColor = System::Drawing::Color::Black;
 			this->label17->Location = System::Drawing::Point(8, 328);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(66, 32);
@@ -647,7 +649,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label18->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label18->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label18->ForeColor = System::Drawing::Color::Black;
 			this->label18->Location = System::Drawing::Point(16, 372);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(58, 16);
@@ -660,7 +662,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label19->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label19->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label19->ForeColor = System::Drawing::Color::Black;
 			this->label19->Location = System::Drawing::Point(20, 393);
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(53, 26);
@@ -680,7 +682,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label20->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label20->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label20->ForeColor = System::Drawing::Color::Black;
 			this->label20->Location = System::Drawing::Point(23, 426);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(50, 26);
@@ -701,7 +703,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label21->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label21->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label21->ForeColor = System::Drawing::Color::Black;
 			this->label21->Location = System::Drawing::Point(29, 468);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(43, 16);
@@ -735,7 +737,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label22->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label22->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label22->ForeColor = System::Drawing::Color::Black;
 			this->label22->Location = System::Drawing::Point(14, 495);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(56, 26);
@@ -748,7 +750,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label23->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label23->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label23->ForeColor = System::Drawing::Color::Black;
 			this->label23->Location = System::Drawing::Point(29, 533);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(33, 16);
@@ -761,7 +763,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label24->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label24->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label24->ForeColor = System::Drawing::Color::Black;
 			this->label24->Location = System::Drawing::Point(20, 568);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(56, 16);
@@ -822,6 +824,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->Controls->Add(this->txt_code);
 			this->Controls->Add(this->txt_id);
 			this->Controls->Add(this->dgv_enr);
+			this->ForeColor = System::Drawing::Color::Black;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"VueClients";
 			this->Text = L"Golema";
