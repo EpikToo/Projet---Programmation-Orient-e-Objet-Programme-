@@ -24,6 +24,7 @@ void NS_Comp_Svc6::CLservices::ajouterUneCommande(System::String^ reference_comm
 	this->oMappTB->setMontant_tva(montant_tva);
 	this->oMappTB->setMontant_ttc(montant_ttc);
 	this->oMappTB->setId_client(id_client);
+
 	sql = this->oMappTB->Insert();
 	this->oCad->Modification(sql);
 }
@@ -48,6 +49,8 @@ void NS_Comp_Svc6::CLservices::modifierUneCommande(System::Int32^ id_commande, S
 	this->oMappTB->setMontant_tva(montant_tva);
 	this->oMappTB->setMontant_ttc(montant_ttc);
 	this->oMappTB->setId_client(id_client);
+
+
 	sql = this->oMappTB->Update();
 	this->oCad->Modification(sql);
 }

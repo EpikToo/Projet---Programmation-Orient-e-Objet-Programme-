@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage6::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [dbo].[Commande]";
+	return "SELECT Commande.id_commande, reference_commande, date_livraison_prevue, date_emission, total_article, montant_total_HT,montant_total_TVA,montant_total_TTC,Commande.id_client, designation, couleur,client_nom,client_prenom from Commande INNER JOIN Article on Article.id_commande = Commande.id_commande INNER JOIN Client on Commande.id_client = Client.id_client ";
 }
 System::String^ NS_Comp_Mappage6::CLmapTB::Insert(void)
 {
@@ -11,7 +11,7 @@ System::String^ NS_Comp_Mappage6::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage6::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [dbo].[Commande] WHERE id_commande = ('" + this->id_commande + "')";
+	return "EXEC Supprimer_Commande @id_commande = '" + this->id_commande +"'";
 }
 System::String^ NS_Comp_Mappage6::CLmapTB::Update(void)
 {
@@ -54,6 +54,23 @@ void NS_Comp_Mappage6::CLmapTB::setId_client(System::Int32^ id_client)
 {
 	this->id_client = id_client;
 }
+void NS_Comp_Mappage6::CLmapTB::setnom_client(System::String^ nom_client)
+{
+	this->nom_client = nom_client;
+}
+void NS_Comp_Mappage6::CLmapTB::setprenom_client(System::String^ prenom_client)
+{
+	this->prenom_client = prenom_client;
+}
+void NS_Comp_Mappage6::CLmapTB::setdesignation(System::String^ designation)
+{
+	this->designation = designation;
+}
+void NS_Comp_Mappage6::CLmapTB::setcouleur(System::String^ couleur)
+{
+	this->couleur = couleur;
+}
+
 
 
 

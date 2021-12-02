@@ -82,6 +82,14 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::TextBox^ txt_nom;
+	private: System::Windows::Forms::TextBox^ txt_prenom;
+	private: System::Windows::Forms::TextBox^ txt_designation;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::TextBox^ txt_couleur;
+	private: System::Windows::Forms::Label^ label14;
 
 
 
@@ -132,24 +140,32 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->txt_nom = (gcnew System::Windows::Forms::TextBox());
+			this->txt_prenom = (gcnew System::Windows::Forms::TextBox());
+			this->txt_designation = (gcnew System::Windows::Forms::TextBox());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->txt_couleur = (gcnew System::Windows::Forms::TextBox());
+			this->label14 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// dgv_enr
 			// 
 			this->dgv_enr->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dgv_enr->Location = System::Drawing::Point(334, 12);
+			this->dgv_enr->Location = System::Drawing::Point(450, 12);
 			this->dgv_enr->Name = L"dgv_enr";
-			this->dgv_enr->Size = System::Drawing::Size(703, 512);
+			this->dgv_enr->Size = System::Drawing::Size(587, 512);
 			this->dgv_enr->TabIndex = 0;
 			this->dgv_enr->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VueCommande::dgv_enr_CellContentClick);
 			// 
 			// btn_load
 			// 
 			this->btn_load->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->btn_load->Location = System::Drawing::Point(165, 401);
+			this->btn_load->Location = System::Drawing::Point(156, 484);
 			this->btn_load->Name = L"btn_load";
-			this->btn_load->Size = System::Drawing::Size(148, 146);
+			this->btn_load->Size = System::Drawing::Size(148, 117);
 			this->btn_load->TabIndex = 1;
 			this->btn_load->Text = L"Charger";
 			this->btn_load->UseVisualStyleBackColor = false;
@@ -158,9 +174,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// btn_insert
 			// 
 			this->btn_insert->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->btn_insert->Location = System::Drawing::Point(49, 401);
+			this->btn_insert->Location = System::Drawing::Point(40, 484);
 			this->btn_insert->Name = L"btn_insert";
-			this->btn_insert->Size = System::Drawing::Size(75, 37);
+			this->btn_insert->Size = System::Drawing::Size(75, 29);
 			this->btn_insert->TabIndex = 2;
 			this->btn_insert->Text = L"Nouveau";
 			this->btn_insert->UseVisualStyleBackColor = false;
@@ -169,9 +185,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// btn_delete
 			// 
 			this->btn_delete->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->btn_delete->Location = System::Drawing::Point(49, 510);
+			this->btn_delete->Location = System::Drawing::Point(40, 573);
 			this->btn_delete->Name = L"btn_delete";
-			this->btn_delete->Size = System::Drawing::Size(75, 37);
+			this->btn_delete->Size = System::Drawing::Size(75, 28);
 			this->btn_delete->TabIndex = 3;
 			this->btn_delete->Text = L"Supprimer";
 			this->btn_delete->UseVisualStyleBackColor = false;
@@ -180,9 +196,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// btn_update
 			// 
 			this->btn_update->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->btn_update->Location = System::Drawing::Point(49, 456);
+			this->btn_update->Location = System::Drawing::Point(40, 530);
 			this->btn_update->Name = L"btn_update";
-			this->btn_update->Size = System::Drawing::Size(75, 37);
+			this->btn_update->Size = System::Drawing::Size(75, 28);
 			this->btn_update->TabIndex = 4;
 			this->btn_update->Text = L"Mise à jour";
 			this->btn_update->UseVisualStyleBackColor = false;
@@ -190,21 +206,21 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_id
 			// 
-			this->txt_id->Location = System::Drawing::Point(31, 22);
+			this->txt_id->Location = System::Drawing::Point(31, 16);
 			this->txt_id->Name = L"txt_id";
 			this->txt_id->Size = System::Drawing::Size(243, 20);
 			this->txt_id->TabIndex = 5;
 			// 
 			// txt_ref
 			// 
-			this->txt_ref->Location = System::Drawing::Point(32, 57);
+			this->txt_ref->Location = System::Drawing::Point(32, 51);
 			this->txt_ref->Name = L"txt_ref";
 			this->txt_ref->Size = System::Drawing::Size(243, 20);
 			this->txt_ref->TabIndex = 6;
 			// 
 			// txt_dateliv
 			// 
-			this->txt_dateliv->Location = System::Drawing::Point(32, 96);
+			this->txt_dateliv->Location = System::Drawing::Point(32, 85);
 			this->txt_dateliv->Name = L"txt_dateliv";
 			this->txt_dateliv->Size = System::Drawing::Size(243, 20);
 			this->txt_dateliv->TabIndex = 7;
@@ -212,7 +228,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(29, 9);
+			this->label1->Location = System::Drawing::Point(29, 2);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(74, 13);
 			this->label1->TabIndex = 8;
@@ -222,7 +238,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(29, 80);
+			this->label2->Location = System::Drawing::Point(29, 72);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(86, 13);
 			this->label2->TabIndex = 9;
@@ -231,7 +247,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(29, 119);
+			this->label3->Location = System::Drawing::Point(29, 106);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(81, 13);
 			this->label3->TabIndex = 10;
@@ -239,7 +255,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(11, 568);
+			this->richTextBox1->Location = System::Drawing::Point(381, 554);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->Size = System::Drawing::Size(518, 39);
 			this->richTextBox1->TabIndex = 14;
@@ -248,7 +264,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(8, 552);
+			this->label4->Location = System::Drawing::Point(378, 538);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(50, 13);
 			this->label4->TabIndex = 15;
@@ -256,7 +272,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_end
 			// 
-			this->btn_end->Location = System::Drawing::Point(267, 372);
+			this->btn_end->Location = System::Drawing::Point(258, 455);
 			this->btn_end->Name = L"btn_end";
 			this->btn_end->Size = System::Drawing::Size(46, 23);
 			this->btn_end->TabIndex = 16;
@@ -266,7 +282,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_next
 			// 
-			this->btn_next->Location = System::Drawing::Point(184, 372);
+			this->btn_next->Location = System::Drawing::Point(175, 455);
 			this->btn_next->Name = L"btn_next";
 			this->btn_next->Size = System::Drawing::Size(46, 23);
 			this->btn_next->TabIndex = 17;
@@ -276,7 +292,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_previous
 			// 
-			this->btn_previous->Location = System::Drawing::Point(108, 372);
+			this->btn_previous->Location = System::Drawing::Point(99, 455);
 			this->btn_previous->Name = L"btn_previous";
 			this->btn_previous->Size = System::Drawing::Size(46, 23);
 			this->btn_previous->TabIndex = 18;
@@ -286,7 +302,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_first
 			// 
-			this->btn_first->Location = System::Drawing::Point(26, 372);
+			this->btn_first->Location = System::Drawing::Point(17, 455);
 			this->btn_first->Name = L"btn_first";
 			this->btn_first->Size = System::Drawing::Size(46, 23);
 			this->btn_first->TabIndex = 19;
@@ -296,7 +312,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(855, 554);
+			this->button2->Location = System::Drawing::Point(905, 554);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(132, 47);
 			this->button2->TabIndex = 20;
@@ -306,44 +322,43 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_total_article
 			// 
-			this->txt_total_article->Location = System::Drawing::Point(31, 182);
+			this->txt_total_article->Location = System::Drawing::Point(31, 155);
 			this->txt_total_article->Name = L"txt_total_article";
 			this->txt_total_article->Size = System::Drawing::Size(243, 20);
 			this->txt_total_article->TabIndex = 21;
 			// 
 			// txt_TVA
 			// 
-			this->txt_TVA->Location = System::Drawing::Point(31, 260);
+			this->txt_TVA->Location = System::Drawing::Point(31, 222);
 			this->txt_TVA->Name = L"txt_TVA";
 			this->txt_TVA->Size = System::Drawing::Size(243, 20);
 			this->txt_TVA->TabIndex = 22;
 			// 
 			// txt_montant_HT
 			// 
-			this->txt_montant_HT->Location = System::Drawing::Point(31, 220);
+			this->txt_montant_HT->Location = System::Drawing::Point(31, 189);
 			this->txt_montant_HT->Name = L"txt_montant_HT";
 			this->txt_montant_HT->Size = System::Drawing::Size(243, 20);
 			this->txt_montant_HT->TabIndex = 23;
 			// 
 			// txt_dateemi
 			// 
-			this->txt_dateemi->Location = System::Drawing::Point(32, 138);
+			this->txt_dateemi->Location = System::Drawing::Point(32, 118);
 			this->txt_dateemi->Name = L"txt_dateemi";
 			this->txt_dateemi->Size = System::Drawing::Size(243, 20);
 			this->txt_dateemi->TabIndex = 24;
 			// 
 			// txt_montant_TTC
 			// 
-			this->txt_montant_TTC->Location = System::Drawing::Point(31, 299);
+			this->txt_montant_TTC->Location = System::Drawing::Point(31, 258);
 			this->txt_montant_TTC->Name = L"txt_montant_TTC";
 			this->txt_montant_TTC->Size = System::Drawing::Size(243, 20);
 			this->txt_montant_TTC->TabIndex = 25;
-			
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(29, 45);
+			this->label5->Location = System::Drawing::Point(29, 38);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(57, 13);
 			this->label5->TabIndex = 26;
@@ -351,7 +366,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_idclient
 			// 
-			this->txt_idclient->Location = System::Drawing::Point(31, 338);
+			this->txt_idclient->Location = System::Drawing::Point(31, 292);
 			this->txt_idclient->Name = L"txt_idclient";
 			this->txt_idclient->Size = System::Drawing::Size(243, 20);
 			this->txt_idclient->TabIndex = 27;
@@ -359,7 +374,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(28, 166);
+			this->label6->Location = System::Drawing::Point(28, 142);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(83, 13);
 			this->label6->TabIndex = 28;
@@ -368,7 +383,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(29, 205);
+			this->label7->Location = System::Drawing::Point(29, 175);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(64, 13);
 			this->label7->TabIndex = 29;
@@ -377,7 +392,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(28, 243);
+			this->label8->Location = System::Drawing::Point(28, 209);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(28, 13);
 			this->label8->TabIndex = 30;
@@ -386,7 +401,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(29, 283);
+			this->label9->Location = System::Drawing::Point(29, 244);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(70, 13);
 			this->label9->TabIndex = 31;
@@ -395,11 +410,75 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label10
 			// 
 			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(28, 322);
+			this->label10->Location = System::Drawing::Point(28, 278);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(47, 13);
 			this->label10->TabIndex = 32;
 			this->label10->Text = L"ID Client";
+			// 
+			// txt_nom
+			// 
+			this->txt_nom->Location = System::Drawing::Point(31, 326);
+			this->txt_nom->Name = L"txt_nom";
+			this->txt_nom->Size = System::Drawing::Size(243, 20);
+			this->txt_nom->TabIndex = 33;
+			// 
+			// txt_prenom
+			// 
+			this->txt_prenom->Location = System::Drawing::Point(31, 362);
+			this->txt_prenom->Name = L"txt_prenom";
+			this->txt_prenom->Size = System::Drawing::Size(243, 20);
+			this->txt_prenom->TabIndex = 34;
+			// 
+			// txt_designation
+			// 
+			this->txt_designation->Location = System::Drawing::Point(31, 399);
+			this->txt_designation->Name = L"txt_designation";
+			this->txt_designation->Size = System::Drawing::Size(243, 20);
+			this->txt_designation->TabIndex = 35;
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(28, 312);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(63, 13);
+			this->label11->TabIndex = 36;
+			this->label11->Text = L"Désignation";
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Location = System::Drawing::Point(28, 347);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(43, 13);
+			this->label12->TabIndex = 37;
+			this->label12->Text = L"Couleur";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Location = System::Drawing::Point(28, 383);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(29, 13);
+			this->label13->TabIndex = 38;
+			this->label13->Text = L"Nom";
+			// 
+			// txt_couleur
+			// 
+			this->txt_couleur->Location = System::Drawing::Point(31, 434);
+			this->txt_couleur->Name = L"txt_couleur";
+			this->txt_couleur->Size = System::Drawing::Size(243, 20);
+			this->txt_couleur->TabIndex = 39;
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Location = System::Drawing::Point(28, 421);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(43, 13);
+			this->label14->TabIndex = 40;
+			this->label14->Text = L"Prénom";
 			// 
 			// VueCommande
 			// 
@@ -409,6 +488,14 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
+			this->Controls->Add(this->label14);
+			this->Controls->Add(this->txt_couleur);
+			this->Controls->Add(this->label13);
+			this->Controls->Add(this->label12);
+			this->Controls->Add(this->label11);
+			this->Controls->Add(this->txt_designation);
+			this->Controls->Add(this->txt_prenom);
+			this->Controls->Add(this->txt_nom);
 			this->Controls->Add(this->label10);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->label8);
@@ -474,6 +561,10 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		this->txt_TVA->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[6]);
 		this->txt_montant_TTC->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[7]);
 		this->txt_idclient->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[8]);
+		this->txt_nom->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[9]);
+		this->txt_prenom->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[10]);
+		this->txt_designation->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[11]);
+		this->txt_couleur->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[12]);
 
 	}
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)
@@ -482,7 +573,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	}
 	private: System::Void btn_insert_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		this->oSvc->ajouterUneCommande(this->txt_ref->Text, this->txt_dateliv->Text, this->txt_dateemi->Text, Convert::ToInt32(this->txt_total_article->Text), Convert::ToDecimal(this->txt_montant_HT->Text), Convert::ToDecimal(this->txt_TVA->Text), Convert::ToDecimal(this->txt_montant_TTC->Text), Convert::ToInt32(this->txt_idclient->Text));
+		this->oSvc->ajouterUneCommande(this->txt_ref->Text,this->txt_dateliv->Text,this->txt_dateemi->Text,Convert::ToInt32(this->txt_total_article->Text),Convert::ToDecimal(this->txt_montant_HT->Text),Convert::ToDecimal(this->txt_TVA->Text),Convert::ToDecimal(this->txt_montant_TTC->Text),Convert::ToInt32(this->txt_idclient->Text));
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}

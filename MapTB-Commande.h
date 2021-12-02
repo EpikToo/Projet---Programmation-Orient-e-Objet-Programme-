@@ -14,6 +14,12 @@ namespace NS_Comp_Mappage6
 		System::Decimal^ montant_tva;
 		System::Decimal^ montant_ttc;
 		System::Int32^ id_client;
+		System::String^ nom_client;
+		System::String^ prenom_client;
+		System::String^ designation;
+		System::String^ couleur;
+
+
 
 
 	public:
@@ -31,6 +37,10 @@ namespace NS_Comp_Mappage6
 		void setMontant_tva(System::Decimal^);
 		void setMontant_ttc(System::Decimal^);
 		void setId_client(System::Int32^);
+		void setnom_client(System::String^);
+		void setprenom_client(System::String^);
+		void setdesignation(System::String^);
+		void setcouleur(System::String^);
 
 		System::Int32^ getId_commande(void);
 	};
