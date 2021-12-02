@@ -348,7 +348,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->txt_date->Name = L"txt_date";
 			this->txt_date->Size = System::Drawing::Size(303, 22);
 			this->txt_date->TabIndex = 24;
-			this->txt_date->TextChanged += gcnew System::EventHandler(this, &VuePersonnel::txt_date_TextChanged);
+	
 			// 
 			// textBox4
 			// 
