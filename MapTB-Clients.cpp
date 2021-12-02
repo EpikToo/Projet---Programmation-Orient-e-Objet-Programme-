@@ -7,7 +7,7 @@ System::String^ NS_Comp_Mappage::CLmapTB::Select(void)
 }
 System::String^ NS_Comp_Mappage::CLmapTB::Insert(void)
 {
-	return "EXEC Creer_client @code_client = '" + this->client_code + "', @client_nom = '" + this->client_nom + "', @client_prenom = '" + this->client_prenom + "', @client_genre = '" + this->client_genre + "', @client_email = '" + this->client_email + "', @client_telephone = '" + this->client_telephone + "', @client_date_anniversaire = '" + this->client_date_anniversaire + "', @numero_rue = '" + this->numero_rue + "', @numero_logement = '" + this->numero_logement + "', @nom_rue = '" + this->nom_rue + "', @nom_residence = '" + this->nom_residence + "', @nom_batiment = '" + this->nom_batiment + "', @etage = '" + this->etage + "', @nom_ville = '" + this->nom_ville + "', @id_adresse = '" + this->id_adresse + "', @id_client = '" + this->id_client + "', @type_adresse1 = '" + this->type_adresse1 + "'";
+	return "EXEC Creer_client @code_client = '" + this->client_code + "', @client_nom = '" + this->client_nom + "', @client_prenom = '" + this->client_prenom + "', @client_genre = '" + this->client_genre + "', @client_email = '" + this->client_email + "', @client_telephone = '" + this->client_telephone + "', @client_date_anniversaire = '" + this->client_date_anniversaire + "', @numero_rue = '" + this->numero_rue + "', @numero_logement = '" + this->numero_logement + "', @nom_rue = '" + this->nom_rue + "', @nom_residence = '" + this->nom_residence + "', @nom_batiment = '" + this->nom_batiment + "', @etage = '" + this->etage + "', @nom_ville = '" + this->nom_ville + "', @type_adresse1 = '" + this->type_adresse1 +"'";
 }
 System::String^ NS_Comp_Mappage::CLmapTB::Delete(void)
 {
@@ -81,10 +81,7 @@ void NS_Comp_Mappage::CLmapTB::setNom_Rue(System::String^ nom_rue)
 {
 	this->nom_rue = nom_rue;
 }
-void NS_Comp_Mappage::CLmapTB::setId_client(System::Int32^ id_client)
-{
-	this->id_client = id_client;
-}
+
 
 
 

@@ -14,6 +14,6 @@ namespace NS_Comp_Svc
 		System::Data::DataSet^ selectionnerTout(System::String^);
 		void supprimerUnePersonne(System::Int32^);
 		void modifierUnePersonne(System::Int32^ id, System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::String^);
-		void ajouterUnePersonne(System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::Int32^, System::Int32^, System::Int32^, System::String^, System::String^, System::String^, System::Int32^, System::String^, System::String^, System::Int32^);
+		void ajouterUnePersonne(System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::Int32^, System::Int32^, System::String^, System::String^, System::String^, System::Int32^, System::String^, System::String^);
 	};
 }

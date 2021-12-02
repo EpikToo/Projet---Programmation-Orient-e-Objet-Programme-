@@ -47,7 +47,7 @@ namespace NS_Comp_Mappage
 		void setEtage(System::Int32^);
 		void setType_adresse1(System::String^);
 		void setNom_ville(System::String^);
-		void setId_client(System::Int32^);
+		
 
 
 		System::Int32^ getId(void);
