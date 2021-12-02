@@ -17,3 +17,5 @@ namespace NS_Comp_Svc
 		void ajouterUnePersonne(System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::String^, System::Int32^, System::Int32^, System::String^, System::String^, System::String^, System::Int32^, System::String^, System::String^);
 	};
 }
+
+/* A */

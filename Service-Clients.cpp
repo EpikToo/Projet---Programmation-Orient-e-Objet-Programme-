@@ -59,3 +59,4 @@ void NS_Comp_Svc::CLservices::modifierUnePersonne(System::Int32^ id, System::Str
 	sql = this->oMappTB->Update();
 	this->oCad->Modification(sql);
 }
+/* A */

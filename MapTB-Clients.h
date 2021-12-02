@@ -55,3 +55,5 @@ namespace NS_Comp_Mappage
 		System::String^ getPrenom(void);
 	};
 }
+
+/* A */

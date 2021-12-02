@@ -82,12 +82,9 @@ void NS_Comp_Mappage::CLmapTB::setNom_Rue(System::String^ nom_rue)
 	this->nom_rue = nom_rue;
 }
 
-
-
-
-
-
 System::Int32^ NS_Comp_Mappage::CLmapTB::getId(void) { return this->id_client; }
 System::String^ NS_Comp_Mappage::CLmapTB::getNom(void) { return this->client_nom; }
 System::String^ NS_Comp_Mappage::CLmapTB::getPrenom(void) { return this->client_prenom; }
+
+/* A */
 
