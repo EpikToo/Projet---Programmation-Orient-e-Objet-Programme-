@@ -327,9 +327,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label5->AutoSize = true;
 			this->label5->Location = System::Drawing::Point(26, 45);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(32, 13);
+			this->label5->Size = System::Drawing::Size(77, 13);
 			this->label5->TabIndex = 26;
-			this->label5->Text = L"Code";
+			this->label5->Text = L"Numéro de rue";
 			// 
 			// textBox4
 			// 
@@ -464,5 +464,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
-	};
+	
+};
 }
