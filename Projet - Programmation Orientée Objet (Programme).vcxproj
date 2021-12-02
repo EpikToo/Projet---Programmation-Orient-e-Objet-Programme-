@@ -154,6 +154,9 @@
     <ClInclude Include="MapTB-Facture.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MapTB-FactureClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MapTB-Facturer.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -201,6 +204,9 @@
     <ClInclude Include="Service-Facture.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Service-FactureClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Service-Facturer.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -225,6 +231,9 @@
     <ClInclude Include="VueAdresses.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="VueArticle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="VueCatalogue.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -235,6 +244,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="VueFacture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VueFactureClient.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="VueFacturePDF.h">
@@ -272,6 +284,7 @@
     <ClCompile Include="MapTB-Clients.cpp" />
     <ClCompile Include="MapTB-Commande.cpp" />
     <ClCompile Include="MapTB-Facture.cpp" />
+    <ClCompile Include="MapTB-FactureClient.cpp" />
     <ClCompile Include="MapTB-Facturer.cpp" />
     <ClCompile Include="MapTB-Personnel.cpp" />
     <ClCompile Include="MapTB-Posseder.cpp" />
@@ -292,6 +305,7 @@
     <ClCompile Include="Service-Clients.cpp" />
     <ClCompile Include="Service-Commande.cpp" />
     <ClCompile Include="Service-Facture.cpp" />
+    <ClCompile Include="Service-FactureClient.cpp" />
     <ClCompile Include="Service-Facturer.cpp" />
     <ClCompile Include="Service-Paiement.cpp" />
     <ClCompile Include="Service-Personnel.cpp" />

@@ -536,7 +536,7 @@ private: System::Void button1_Click_2(System::Object^ sender, System::EventArgs^
 	this->processusPersonnes = gcnew NS_Comp_Svc15::CLservices();
 	System::String^ order = "SELECT SUM(prix_produit_HT) as 'Valeur d`achat stock' FROM Article WHERE id_commande IS NULL";
 	System::Data::SqlClient::SqlConnection^ oCnx;
-	oCnx = gcnew System::Data::SqlClient::SqlConnection("Data Source=FLORIAN\\MSSQL_FLORIAN;Initial Catalog=ProjetPOO;User ID=cnx_6;Password=Mdp123; Integrated Security=True");
+	oCnx = gcnew System::Data::SqlClient::SqlConnection("Data Source = LAPTOP-U9N5DUUS\\MSSQL_FLO;Initial Catalog = POOP;Integrated Security=True");
 	this->checkBox4->Checked = false;
 	this->checkBox5->Checked = false;
 	this->checkBox2->Checked = false;
