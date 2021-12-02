@@ -489,7 +489,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	}
 	private: System::Void btn_insert_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		this->oSvc->ajouterUnArticle(this->txt_ref->Text, this->txt_des->Text, Convert::ToDecimal(this->txt_prix_ht->Text), Convert::ToDecimal(this->txt_taux->Text), this->txt_coul->Text, this->txt_pro->Text, Convert::ToInt32(this->txt_id_c->Text), Convert::ToInt32(this->txt_id_cat));
+		this->oSvc->ajouterUnArticle(this->txt_ref->Text, this->txt_des->Text, Convert::ToDecimal(this->txt_prix_ht->Text), Convert::ToInt32(this->txt_taux->Text), this->txt_coul->Text, this->txt_pro->Text, Convert::ToInt32(this->txt_id_c->Text), Convert::ToInt32(this->txt_id_cat));
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -505,7 +505,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		this->oSvc->supprimerUnArticle(Convert::ToInt32(this->txt_id_a->Text));
 	}
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->modifierUnArticle(Convert::ToInt32(this->txt_id_a->Text), this->txt_ref->Text, this->txt_des->Text, Convert::ToDecimal(this->txt_prix_ht->Text), Convert::ToDecimal(this->txt_taux->Text), this->txt_coul->Text, this->txt_pro->Text, Convert::ToInt32(this->txt_id_c->Text), Convert::ToInt32(this->txt_id_cat));
+		this->oSvc->modifierUnArticle(Convert::ToInt32(this->txt_id_a->Text), this->txt_ref->Text, this->txt_des->Text, Convert::ToDecimal(this->txt_prix_ht->Text), Convert::ToInt32(this->txt_taux->Text), this->txt_coul->Text, this->txt_pro->Text, Convert::ToInt32(this->txt_id_c->Text), Convert::ToInt32(this->txt_id_cat));
 	}
 	private: System::Void btn_first_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->index = 0;

@@ -35,7 +35,7 @@ void NS_Comp_Mappage9::CLmapTB::setPrix_produitHT(System::Decimal^ prix_produit_
 	this->prix_produit_HT = prix_produit_HT;
 }
 
-void NS_Comp_Mappage9::CLmapTB::setTaux_tva(System::Decimal^ taux_tva)
+void NS_Comp_Mappage9::CLmapTB::setTaux_tva(System::Int32^ taux_tva)
 {
 	this->taux_TVA = taux_tva;
 }
