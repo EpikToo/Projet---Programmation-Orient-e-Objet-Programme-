@@ -11,7 +11,7 @@ System::String^ NS_Comp_Mappage3::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage3::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [dbo].[Adresse] WHERE id_adresse = ('" + this->id_adresse + "')";
+	return "EXEC Supp_Adresse  @id_adresse = '" + this->id_adresse + "'";
 }
 System::String^ NS_Comp_Mappage3::CLmapTB::Update(void)
 {
