@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage6::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [Prosit6].[dbo].[Commande]";
+	return "SELECT * FROM [dbo].[Commande]";
 }
 System::String^ NS_Comp_Mappage6::CLmapTB::Insert(void)
 {
@@ -11,11 +11,11 @@ System::String^ NS_Comp_Mappage6::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage6::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [Prosit6].[dbo].[Commande] WHERE id_commande = ('" + this->id_commande + "')";
+	return "DELETE FROM [dbo].[Commande] WHERE id_commande = ('" + this->id_commande + "')";
 }
 System::String^ NS_Comp_Mappage6::CLmapTB::Update(void)
 {
-	return "UPDATE [Prosit6].[dbo].[Commande] SET reference_commande = '" + this->reference_commande + "', date_livraison_prevue = '" + this->date_livraison_prevue + "', date_emission = '" + this->date_emission + "', total_article = '" + this->total_article + "', montant_total_HT = '" + this->montant_ht + "', montant_total_TVA = '" + this->montant_tva + "', montant_total_TTC = '" + this->montant_ttc + "', id_client = '" + this->id_client + "' WHERE id_commande = ('" + this->id_commande + "')";
+	return "UPDATE [dbo].[Commande] SET reference_commande = '" + this->reference_commande + "', date_livraison_prevue = '" + this->date_livraison_prevue + "', date_emission = '" + this->date_emission + "', total_article = '" + this->total_article + "', montant_total_HT = '" + this->montant_ht + "', montant_total_TVA = '" + this->montant_tva + "', montant_total_TTC = '" + this->montant_ttc + "', id_client = '" + this->id_client + "' WHERE id_commande = ('" + this->id_commande + "')";
 }
 
 void NS_Comp_Mappage6::CLmapTB::setId_commande(System::Int32^ id_commande)

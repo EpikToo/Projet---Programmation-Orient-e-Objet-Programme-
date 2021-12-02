@@ -4,7 +4,7 @@
 
 System::String^ NS_Comp_Mappage9::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [Prosit6].[dbo].[Article]";
+	return "SELECT * FROM [dbo].[Article]";
 }
 System::String^ NS_Comp_Mappage9::CLmapTB::Insert(void)
 {
@@ -12,11 +12,11 @@ System::String^ NS_Comp_Mappage9::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage9::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [Prosit6].[dbo].[Article] WHERE id_catalogue = ('" + this->id_article + "')";
+	return "DELETE FROM [dbo].[Article] WHERE id_catalogue = ('" + this->id_article + "')";
 }
 System::String^ NS_Comp_Mappage9::CLmapTB::Update(void)
 {
-	return "UPDATE [Prosit6].[dbo].[Article] SET reference_article = '" + this->reference_article + "', designation = '" + this->designation + "', prix_produit_HT = '" + this->prix_produit_HT + "', taux_TVA = '" + this->taux_TVA + "', couleur = '" + this->couleur + "', taux_TVA = '" + this->produit + "', taux_TVA = '" + this->id_commande + "', taux_TVA = '" + this->id_catalogue + "'  WHERE id_catalogue = ('" + this->id_article + "')";
+	return "UPDATE [dbo].[Article] SET reference_article = '" + this->reference_article + "', designation = '" + this->designation + "', prix_produit_HT = '" + this->prix_produit_HT + "', taux_TVA = '" + this->taux_TVA + "', couleur = '" + this->couleur + "', taux_TVA = '" + this->produit + "', taux_TVA = '" + this->id_commande + "', taux_TVA = '" + this->id_catalogue + "'  WHERE id_catalogue = ('" + this->id_article + "')";
 }
 void NS_Comp_Mappage9::CLmapTB::setId(System::Int32^ id_article)
 {

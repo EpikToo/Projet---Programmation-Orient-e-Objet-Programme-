@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [POO].[dbo].[Client] FULL JOIN [POO].[dbo].[Posseder] ON Client.id_client = Posseder.id_client FULL JOIN Adresse ON Adresse.id_adresse = Posseder.id_adresse";
+	return "SELECT * FROM [dbo].[Client] FULL JOIN [dbo].[Posseder] ON Client.id_client = Posseder.id_client FULL JOIN Adresse ON Adresse.id_adresse = Posseder.id_adresse";
 }
 System::String^ NS_Comp_Mappage::CLmapTB::Insert(void)
 {

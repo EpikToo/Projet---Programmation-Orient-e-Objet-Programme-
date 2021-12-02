@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage4::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [POO].[dbo].[Catalogue]";
+	return "SELECT * FROM [dbo].[Catalogue]";
 }
 System::String^ NS_Comp_Mappage4::CLmapTB::Insert(void)
 {
@@ -11,11 +11,11 @@ System::String^ NS_Comp_Mappage4::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage4::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [POO].[dbo].[Catalogue] WHERE id_catalogue = ('" + this->id_catalogue + "')";
+	return "DELETE FROM [dbo].[Catalogue] WHERE id_catalogue = ('" + this->id_catalogue + "')";
 }
 System::String^ NS_Comp_Mappage4::CLmapTB::Update(void)
 {
-	return "UPDATE [POO].[dbo].[Catalogue] SET quantite_produit = '" + this->quantite_produit + "', seuil_reapprovisionnement = '" + this->seuil_reapprovisionnement + "' WHERE id_catalogue = ('" + this->id_catalogue + "')";
+	return "UPDATE [dbo].[Catalogue] SET quantite_produit = '" + this->quantite_produit + "', seuil_reapprovisionnement = '" + this->seuil_reapprovisionnement + "' WHERE id_catalogue = ('" + this->id_catalogue + "')";
 }
 void NS_Comp_Mappage4::CLmapTB::setId(System::Int32^ id_catalogue)
 {

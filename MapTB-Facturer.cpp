@@ -3,22 +3,22 @@
 
 System::String^ NS_Comp_Mappage11::CLmapTB::Select(void)
 {
-    return "SELECT * FROM [Prosit6].[dbo].[Facturer]";
+    return "SELECT * FROM [dbo].[Facturer]";
 }
 
 System::String^ NS_Comp_Mappage11::CLmapTB::Insert(void)
 {
-    return "SELECT * FROM [Prosit6].[dbo].[Facturer]";
+    return "SELECT * FROM [dbo].[Facturer]";
 }
 
 System::String^ NS_Comp_Mappage11::CLmapTB::Delete(void)
 {
-    return "SELECT * FROM [Prosit6].[dbo].[Facturer]";
+    return "SELECT * FROM [dbo].[Facturer]";
 }
 
 System::String^ NS_Comp_Mappage11::CLmapTB::Update(void)
 {
-    return "SELECT * FROM [Prosit6].[dbo].[Facturer]";
+    return "SELECT * FROM [dbo].[Facturer]";
 }
 
 void NS_Comp_Mappage11::CLmapTB::setId_paiement(System::Int32^ id_paiement)

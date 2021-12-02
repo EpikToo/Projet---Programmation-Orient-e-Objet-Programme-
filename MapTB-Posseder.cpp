@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage12::CLmapTB::Select(void)
 {
-    return "SELECT * FROM [POO].[dbo].[Posseder]";
+    return "SELECT * FROM [dbo].[Posseder]";
 }
 System::String^ NS_Comp_Mappage12::CLmapTB::Insert(void)
 {

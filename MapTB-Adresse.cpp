@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage3::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [Prosit6].[dbo].[Adresse] FULL JOIN Client ON Adresse.id_client = Client.id_client";
+	return "SELECT * FROM [dbo].[Adresse] FULL JOIN Client ON Adresse.id_client = Client.id_client";
 }
 System::String^ NS_Comp_Mappage3::CLmapTB::Insert(void)
 {
@@ -11,11 +11,11 @@ System::String^ NS_Comp_Mappage3::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage3::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [Prosit6].[dbo].[Adresse] WHERE id_adresse = ('" + this->id_adresse + "')";
+	return "DELETE FROM [dbo].[Adresse] WHERE id_adresse = ('" + this->id_adresse + "')";
 }
 System::String^ NS_Comp_Mappage3::CLmapTB::Update(void)
 {
-	return "UPDATE [Prosit6].[dbo].[Adresse] SET numero_rue = '" + this->numero_rue + "', numero_logement = '" + this->numero_logement + "', nom_rue = '" + this->nom_rue + "', nom_residence = '" + this->nom_residence + "', nom_batiment = '" + this->nom_batiment + "', etage = '" + this->etage + "', type_adresse1 = '" + this->type_adresse1 + "', nom_ville = '" + this->nom_ville + "', id_client = '" + this->id_client + "' WHERE id_adresse = ('" + this->id_adresse + "')";
+	return "UPDATE [dbo].[Adresse] SET numero_rue = '" + this->numero_rue + "', numero_logement = '" + this->numero_logement + "', nom_rue = '" + this->nom_rue + "', nom_residence = '" + this->nom_residence + "', nom_batiment = '" + this->nom_batiment + "', etage = '" + this->etage + "', type_adresse1 = '" + this->type_adresse1 + "', nom_ville = '" + this->nom_ville + "', id_client = '" + this->id_client + "' WHERE id_adresse = ('" + this->id_adresse + "')";
 }
 void NS_Comp_Mappage3::CLmapTB::setId(System::Int32^ id_adresse)
 {

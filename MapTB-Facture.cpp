@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage8::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [POO].[dbo].[Facture]";
+	return "SELECT * FROM [dbo].[Facture]";
 }
 System::String^ NS_Comp_Mappage8::CLmapTB::Insert(void)
 {
@@ -11,12 +11,12 @@ System::String^ NS_Comp_Mappage8::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage8::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [POO].[dbo].[Facture] WHERE id_facture = ('" + this->id_facture + "')";
+	return "DELETE FROM [dbo].[Facture] WHERE id_facture = ('" + this->id_facture + "')";
 }
 System::String^ NS_Comp_Mappage8::CLmapTB::Update(void)
 {
 	this->logo = "SELECT * FROM OPENROWSET(BULK N'C:\\Users\Flawz\\Desktop\golemago_2_1.png', SINGLE_BLOB) AS MonImage";
-	return "UPDATE [POO].[dbo].[Facture] SET nom_societe = '" + this->nom_societe + "', adresse_societe = '" + this->adresse_societe + "', numero_service_client = '" + this->numero_service_client + "', logo_societe = '" + this->logo + "'  WHERE id_catalogue = ('" + this->id_facture + "')";
+	return "UPDATE [dbo].[Facture] SET nom_societe = '" + this->nom_societe + "', adresse_societe = '" + this->adresse_societe + "', numero_service_client = '" + this->numero_service_client + "', logo_societe = '" + this->logo + "'  WHERE id_catalogue = ('" + this->id_facture + "')";
 }
 void NS_Comp_Mappage8::CLmapTB::setId(System::Int32^ id_facture)
 {
