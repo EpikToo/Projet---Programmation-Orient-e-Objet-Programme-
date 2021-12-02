@@ -194,12 +194,13 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button2
 			// 
+			this->button2->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button2->Location = System::Drawing::Point(873, 552);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(164, 57);
 			this->button2->TabIndex = 20;
 			this->button2->Text = L"Accès au menu";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &SimVar::button2_Click_1);
 			// 
 			// label14
@@ -401,7 +402,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::SystemColors::Window;
+			this->button1->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button1->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->button1->Location = System::Drawing::Point(44, 432);
 			this->button1->Name = L"button1";
@@ -413,6 +414,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// listBox1
 			// 
+			this->listBox1->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->listBox1->FormattingEnabled = true;
 			this->listBox1->Location = System::Drawing::Point(247, 432);
 			this->listBox1->Name = L"listBox1";
@@ -536,7 +538,7 @@ private: System::Void button1_Click_2(System::Object^ sender, System::EventArgs^
 	this->processusPersonnes = gcnew NS_Comp_Svc15::CLservices();
 	System::String^ order = "SELECT SUM(prix_produit_HT) as 'Valeur d`achat stock' FROM Article WHERE id_commande IS NULL";
 	System::Data::SqlClient::SqlConnection^ oCnx;
-	oCnx = gcnew System::Data::SqlClient::SqlConnection("Data Source = LAPTOP-U9N5DUUS\\MSSQL_FLO;Initial Catalog = POOP;Integrated Security=True");
+	oCnx = gcnew System::Data::SqlClient::SqlConnection("Data Source = DESKTOP-ROR4FKB\\MSSQLPAUL;Initial Catalog = TEST6;Integrated Security=True");
 	this->checkBox4->Checked = false;
 	this->checkBox5->Checked = false;
 	this->checkBox2->Checked = false;

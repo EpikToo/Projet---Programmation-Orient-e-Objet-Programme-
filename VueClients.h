@@ -929,15 +929,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	}
 private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
-private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
-	
-	OpenFileDialog dialog;
-	dialog.Filter = "JPG Files(*.j)|*.jpg|all files(*.*)|*.*";
-	dialog.ShowDialog();
-	System::String^ img = dialog.FileName->ToString();
-	pictureBox1->ImageLocation = img;
-		
-}
+
 	    
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
