@@ -100,11 +100,11 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->textEdit1->Name = L"textEdit1";
 			this->textEdit1->Size = System::Drawing::Size(100, 20);
 			this->textEdit1->TabIndex = 10;
-			// 
+			//
 			// pdfViewer1
 			// 
 			this->pdfViewer1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->pdfViewer1->DocumentFilePath = L"C:\\Users\\Flawz\\Desktop\\Modele-Facture-Imprimable-PDF-source-Invoice-Template-2-1."
+			this->pdfViewer1->DocumentFilePath = L"C:\\Users\\saval\\Desktop\\Modele-Facture-Imprimable-PDF-source-Invoice-Template-2-1."
 				L"pdf";
 			this->pdfViewer1->Location = System::Drawing::Point(0, 50);
 			this->pdfViewer1->MenuManager = this->ribbonControl1;
@@ -158,7 +158,7 @@ private: System::Void chartControl1_Click(System::Object^ sender, System::EventA
 private: System::Void simpleButton3_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	ChartControl Export;
-	Export.ExportToPdf("C:\\Users\\Flawz\\Desktop\\Facture.pdf");
+	Export.ExportToPdf("CC:\\Users\\saval\\Desktop\\Facture.pdf");
 }
 private: System::Void simpleButton1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 }
