@@ -81,6 +81,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::Label^ label8;
 
 
 
@@ -136,6 +137,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -312,14 +314,14 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(32, 223);
+			this->textBox1->Location = System::Drawing::Point(32, 253);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(243, 20);
 			this->textBox1->TabIndex = 21;
 			// 
 			// txt_date
 			// 
-			this->txt_date->Location = System::Drawing::Point(32, 138);
+			this->txt_date->Location = System::Drawing::Point(32, 136);
 			this->txt_date->Name = L"txt_date";
 			this->txt_date->Size = System::Drawing::Size(243, 20);
 			this->txt_date->TabIndex = 24;
@@ -337,7 +339,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(29, 207);
+			this->label6->Location = System::Drawing::Point(32, 237);
 			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(122, 13);
@@ -346,7 +348,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(31, 180);
+			this->textBox2->Location = System::Drawing::Point(31, 214);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(243, 20);
 			this->textBox2->TabIndex = 34;
@@ -354,7 +356,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(32, 164);
+			this->label7->Location = System::Drawing::Point(32, 198);
 			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(59, 13);
@@ -363,10 +365,20 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(301, 223);
+			this->textBox3->Location = System::Drawing::Point(31, 175);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(243, 20);
 			this->textBox3->TabIndex = 36;
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(32, 159);
+			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(71, 13);
+			this->label8->TabIndex = 37;
+			this->label8->Text = L"Type adresse";
 			// 
 			// VuePersonnel
 			// 
@@ -376,6 +388,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
+			this->Controls->Add(this->label8);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->textBox2);
@@ -458,7 +471,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		this->oSvc->supprimerUnPersonnel(Convert::ToInt32(this->txt_id->Text));
 	}
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->ModifierUnPersonnel(Convert::ToInt32(this->txt_id->Text), this->txt_nom->Text, this->txt_prenom->Text, this->txt_date->Text,"Livraison", Convert::ToInt32(this->textBox2->Text), Convert::ToInt32(this->textBox1->Text));
+		this->oSvc->ModifierUnPersonnel(Convert::ToInt32(this->txt_id->Text), this->txt_nom->Text, this->txt_prenom->Text, this->txt_date->Text, "Livraison", Convert::ToInt32(this->textBox2->Text), Convert::ToInt32(this->textBox1->Text));
 	}
 	private: System::Void btn_first_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->index = 0;

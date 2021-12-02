@@ -15,7 +15,7 @@ System::String^ NS_Comp_Mappage5::CLmapTB::Delete(void)
 }
 System::String^ NS_Comp_Mappage5::CLmapTB::Update(void)
 {
-	return "UPDATE [dbo].[Personnel] SET personnel_nom = '" + this->personnel_nom + "', personnel_prenom = '" + this->personnel_prenom + "', date_embauche = '" + this->date_embauche + "',type_adresse2 = '" + this->typeadresse2 + "', id_personnel_ENCADRER = '" + this->id_personnel_supérieur_hierarchique + "', id_adresse = '" + this->id_adresse + "')";
+	return "UPDATE [dbo].[Personnel] SET personnel_nom = '" + this->personnel_nom + "', personnel_prenom = '" + this->personnel_prenom + "', date_embauche = '" + this->date_embauche + "', type_adresse2 = '" + this->typeadresse2 + "', id_adresse = '" + this->id_adresse + "', id_personnel_encadrer = '" + this->id_personnel_supérieur_hierarchique + "')";
 }
 void NS_Comp_Mappage5::CLmapTB::setId(System::Int32^ id_personnel)
 {
