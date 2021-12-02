@@ -395,6 +395,9 @@
     <EmbeddedResource Include="VueAdresses.resx">
       <DependentUpon>VueAdresses.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VueArticle.resx">
+      <DependentUpon>VueArticle.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VueCatalogue.resx">
       <DependentUpon>VueCatalogue.h</DependentUpon>
     </EmbeddedResource>

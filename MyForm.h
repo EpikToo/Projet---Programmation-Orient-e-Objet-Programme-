@@ -10,7 +10,7 @@
 #include "VueSimVar.h"
 #include "VueStats.h"
 #include "VuePaiement.h"
-
+#include "VueArticle.h"
 
 namespace ProjetProgrammationOrientéeObjetProgramme {
 
@@ -66,6 +66,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: System::Windows::Forms::Button^ button10;
 	private: System::Windows::Forms::Button^ button11;
 	private: System::Windows::Forms::Button^ button12;
+	private: System::Windows::Forms::Button^ button13;
 
 
 
@@ -104,6 +105,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->button11 = (gcnew System::Windows::Forms::Button());
 			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->button13 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->separatorControl1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->separatorControl2))->BeginInit();
@@ -180,7 +182,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button7
 			// 
 			this->button7->BackColor = System::Drawing::SystemColors::Control;
-			this->button7->Location = System::Drawing::Point(27, 249);
+			this->button7->Location = System::Drawing::Point(27, 213);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(273, 30);
 			this->button7->TabIndex = 30;
@@ -291,6 +293,17 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->button12->UseVisualStyleBackColor = false;
 			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
 			// 
+			// button13
+			// 
+			this->button13->BackColor = System::Drawing::SystemColors::Control;
+			this->button13->Location = System::Drawing::Point(27, 249);
+			this->button13->Name = L"button13";
+			this->button13->Size = System::Drawing::Size(273, 30);
+			this->button13->TabIndex = 40;
+			this->button13->Text = L"Gestion des articles";
+			this->button13->UseVisualStyleBackColor = false;
+			this->button13->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -298,6 +311,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
+			this->Controls->Add(this->button13);
 			this->Controls->Add(this->button12);
 			this->Controls->Add(this->button11);
 			this->Controls->Add(this->button10);
@@ -403,6 +417,12 @@ private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ 
 	this->Hide();
 	VuePaiement VuePaiement;
 	VuePaiement.ShowDialog();
+	this->Show();
+}
+private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Hide();
+	VueArticle VueArticle;
+	VueArticle.ShowDialog();
 	this->Show();
 }
 };
