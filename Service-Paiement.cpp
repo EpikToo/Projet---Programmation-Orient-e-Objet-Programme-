@@ -13,7 +13,7 @@ System::Data::DataSet^ NS_Comp_Svc10::CLservices::selectionnerTout(System::Strin
 	return this->oCad->Lignes(sql, dataTableName);
 }
 
-void NS_Comp_Svc10::CLservices::ajouterUnPaiement(System::Int32^ montant, System::String^ moyen, System::String^ date_paiement, System::String^ date_solde, System::String^ date, System::Int32^ id_commande)
+void NS_Comp_Svc10::CLservices::ajouterUnPaiement(System::Int32^ montant, System::String^ moyen, System::String^ date_paiement, System::String^ date_solde, System::Int32^ id_commande)
 {
 	System::String^ sql;
 	this->oMappTB->setMontant(montant);
@@ -34,7 +34,7 @@ void NS_Comp_Svc10::CLservices::supprimerUnePersonne(System::Int32^ id_paiement)
 	this->oCad->Modification(sql);
 }
 
-void NS_Comp_Svc10::CLservices::modifierUnPaiement(System::Int32^ id, System::Int32^ montant, System::String^ moyen, System::String^ date_paiement, System::String^ date_solde, System::String^ date, System::Int32^ id_commande)
+void NS_Comp_Svc10::CLservices::modifierUnPaiement(System::Int32^ id, System::Int32^ montant, System::String^ moyen, System::String^ date_paiement, System::String^ date_solde, System::Int32^ id_commande)
 {
 	System::String^ sql;
 	this->oMappTB->setId(id);

@@ -12,8 +12,8 @@ namespace NS_Comp_Svc10
 	public:
 		CLservices(void);
 		System::Data::DataSet^ selectionnerTout(System::String^);
-		void ajouterUnPaiement(System::Int32^, System::String^, System::String^, System::String^, System::String^, System::Int32^);
+		void ajouterUnPaiement(System::Int32^, System::String^, System::String^, System::String^, System::Int32^);
 		void supprimerUnePersonne(System::Int32^);
-		void modifierUnPaiement(System::Int32^, System::Int32^, System::String^, System::String^, System::String^, System::String^, System::Int32^);
+		void modifierUnPaiement(System::Int32^, System::Int32^, System::String^, System::String^, System::String^, System::Int32^);
 	};
 }

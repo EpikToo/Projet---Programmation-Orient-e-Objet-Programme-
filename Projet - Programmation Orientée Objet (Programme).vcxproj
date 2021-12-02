@@ -277,7 +277,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Connexion.cpp" />
-    <ClCompile Include="MabTB-Paiement.cpp" />
+    <ClCompile Include="MapTB-Paiement.cpp" />
     <ClCompile Include="MapTB-Adresse.cpp" />
     <ClCompile Include="MapTB-Article.cpp" />
     <ClCompile Include="MapTB-Catalogue.cpp" />
@@ -409,6 +409,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VueFacturePDF.resx">
       <DependentUpon>VueFacturePDF.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VuePaiement.resx">
+      <DependentUpon>VuePaiement.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VuePersonnel.resx">
       <DependentUpon>VuePersonnel.h</DependentUpon>
