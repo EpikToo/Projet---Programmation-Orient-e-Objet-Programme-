@@ -15,12 +15,17 @@ System::Data::DataSet^ NS_Comp_Svc4::CLservices::selectionnerTout(System::String
 
 void NS_Comp_Svc4::CLservices::ajouterUnCatalogue(System::Int32^ quantite, System::Int32^ seuil)
 {
-	System::String^ sql;
-	this->oMappTB->setQuantité_produit(quantite);
-	this->oMappTB->setSeuil_réapprovisionnement(seuil);
-	sql = this->oMappTB->Insert();
+	System::String^ con = "Data Source=FLORIAN\\MSSQL_FLORIAN;Initial Catalog=POO;User ID=cnx_6;Password=Mdp123; Integrated Security=True";
+	System::Data::SqlClient::SqlConnection connect(con);
+	System::Data::SqlClient::SqlCommand^ commande;
+	commande = connect.CreateCommand();
+	commande->CommandText = "INSERT INTO Catalogue (quantite_produit, seuil_reapprovisionnement) VALUES(@quantite_produit, @seuil_reapprovisionnement)";
+	commande->Parameters->AddWithValue("@quantite_produit", quantite);
+	commande->Parameters->AddWithValue("@seuil_reapprovisionnement", seuil);
+	connect.Open();
+	commande->ExecuteNonQuery();
+	connect.Close();
 
-	this->oCad->Modification(sql);
 }
 
 void NS_Comp_Svc4::CLservices::supprimerUnCatalogue(System::Int32^ id)
@@ -36,7 +41,7 @@ void NS_Comp_Svc4::CLservices::modifierUnCatalogue(System::Int32^ id, System::In
 	System::String^ sql;
 	this->oMappTB->setId(id);
 	this->oMappTB->setQuantité_produit(quantite);
-	this->oMappTB->setSeuil_réapprovisionnement(seuil);
+	this->oMappTB->setSeuil_reapprovisionnement(seuil);
 	sql = this->oMappTB->Update();
 	this->oCad->Modification(sql);
 }

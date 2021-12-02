@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage10::CLmapTB::Select(void)
 {
-	return "SELECT * FROM [Prosit6].[dbo].[Paiement]";
+	return "SELECT * FROM [POO].[dbo].[Paiement]";
 }
 System::String^ NS_Comp_Mappage10::CLmapTB::Insert(void)
 {
@@ -11,11 +11,11 @@ System::String^ NS_Comp_Mappage10::CLmapTB::Insert(void)
 }
 System::String^ NS_Comp_Mappage10::CLmapTB::Delete(void)
 {
-	return "DELETE FROM [Prosit6].[dbo].[Paiement] WHERE id_paiement = ('" + this->id_paiement + "')";
+	return "DELETE FROM [POO].[dbo].[Paiement] WHERE id_paiement = ('" + this->id_paiement + "')";
 }
 System::String^ NS_Comp_Mappage10::CLmapTB::Update(void)
 {
-	return "UPDATE [Prosit6].[dbo].[Paiement] SET montant = '" + this->montant + "', moyen_paiement = '" + this->moyen_paiement + "', date_paiement = '" + this->date_paiement + "', date_solde_reglement = '" + this->date_solde_reglement + "', id_commande = '" + this->id_commande + "')";
+	return "UPDATE [POO].[dbo].[Paiement] SET montant = '" + this->montant + "', moyen_paiement = '" + this->moyen_paiement + "', date_paiement = '" + this->date_paiement + "', date_solde_reglement = '" + this->date_solde_reglement + "', id_commande = '" + this->id_commande + "')";
 }
 void NS_Comp_Mappage10::CLmapTB::setId(System::Int32^ id_paiement)
 {

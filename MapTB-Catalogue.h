@@ -16,7 +16,9 @@ namespace NS_Comp_Mappage4
 
 		void setId(System::Int32^);
 		void setQuantité_produit(System::Int32^);
-		void setSeuil_réapprovisionnement(System::Int32^);
+		void setSeuil_reapprovisionnement(System::Int32^);
+
+
 
 		System::Int32^ getId(void);
 	};
