@@ -12,8 +12,8 @@ namespace NS_Comp_Svc9
 	public:
 		CLservices(void);
 		System::Data::DataSet^ selectionnerTout(System::String^);
-		void ajouterUnArticle(System::String^, System::String^, System::Decimal^, System::Int32^, System::String^, System::String^, System::Int32^, System::Int32^);
+		void ajouterUnArticle(System::String^, System::String^, System::Double^, System::Int32^, System::String^, System::String^, System::Int32^, System::Int32^);
 		void supprimerUnArticle(System::Int32^);
-		void modifierUnArticle(System::Int32^, System::String^, System::String^, System::Decimal^, System::Int32^, System::String^, System::String^, System::Int32^, System::Int32^);
+		void modifierUnArticle(System::Int32^, System::String^, System::String^, System::Double^, System::Int32^, System::String^, System::String^, System::Int32^, System::Int32^);
 	};
 }

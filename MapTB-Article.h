@@ -8,7 +8,7 @@ namespace NS_Comp_Mappage9
 		System::Int32^ id_article;
 		System::String^ reference_article;
 		System::String^ designation;
-		System::Decimal^ prix_produit_HT;
+		System::Double^ prix_produit_HT;
 		System::Int32^ taux_TVA;
 		System::String^ couleur;
 		System::String^ produit;
@@ -23,7 +23,7 @@ namespace NS_Comp_Mappage9
 		void setId(System::Int32^);
 		void setReference_article(System::String^);
 		void setDesignation(System::String^);
-		void setPrix_produitHT(System::Decimal^);
+		void setPrix_produitHT(System::Double^);
 		void setTaux_tva(System::Int32^);
 		void setCouleur(System::String^);
 		void setProduit(System::String^);

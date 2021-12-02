@@ -13,7 +13,7 @@ System::Data::DataSet^ NS_Comp_Svc9::CLservices::selectionnerTout(System::String
 	return this->oCad->Lignes(sql, dataTableName);
 }
 
-void NS_Comp_Svc9::CLservices::ajouterUnArticle(System::String^ reference, System::String^ designation, System::Decimal^ prix_produit_HT, System::Int32^ taux_TVA, System::String^ couleur, System::String^ produit, System::Int32^ id_commande, System::Int32^ id_catalogue)
+void NS_Comp_Svc9::CLservices::ajouterUnArticle(System::String^ reference, System::String^ designation, System::Double^ prix_produit_HT, System::Int32^ taux_TVA, System::String^ couleur, System::String^ produit, System::Int32^ id_commande, System::Int32^ id_catalogue)
 {
 	System::String^ sql;
 	this->oMappTB->setReference_article(reference);
@@ -36,7 +36,7 @@ void NS_Comp_Svc9::CLservices::supprimerUnArticle(System::Int32^ id_article)
 	this->oCad->Modification(sql);
 }
 
-void NS_Comp_Svc9::CLservices::modifierUnArticle(System::Int32^ id, System::String^ reference, System::String^ designation, System::Decimal^ prix_produit_HT, System::Int32^ taux_TVA, System::String^ couleur, System::String^ produit, System::Int32^ id_commande, System::Int32^ id_catalogue)
+void NS_Comp_Svc9::CLservices::modifierUnArticle(System::Int32^ id, System::String^ reference, System::String^ designation, System::Double^ prix_produit_HT, System::Int32^ taux_TVA, System::String^ couleur, System::String^ produit, System::Int32^ id_commande, System::Int32^ id_catalogue)
 {
 	System::String^ sql;
 	this->oMappTB->setId(id);

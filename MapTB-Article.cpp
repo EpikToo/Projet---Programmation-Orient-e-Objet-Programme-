@@ -30,7 +30,7 @@ void NS_Comp_Mappage9::CLmapTB::setDesignation(System::String^ designation)
 {
 	this->designation = designation;
 }
-void NS_Comp_Mappage9::CLmapTB::setPrix_produitHT(System::Decimal^ prix_produit_HT)
+void NS_Comp_Mappage9::CLmapTB::setPrix_produitHT(System::Double^ prix_produit_HT)
 {
 	this->prix_produit_HT = prix_produit_HT;
 }
