@@ -123,7 +123,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// btn_load
 			// 
 			this->btn_load->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->btn_load->Location = System::Drawing::Point(183, 441);
+			this->btn_load->Location = System::Drawing::Point(193, 441);
 			this->btn_load->Margin = System::Windows::Forms::Padding(4);
 			this->btn_load->Name = L"btn_load";
 			this->btn_load->Size = System::Drawing::Size(206, 191);
@@ -303,15 +303,14 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Gadugi", 31.8F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+			this->label3->Font = (gcnew System::Drawing::Font(L"Gadugi", 31.8F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::SlateGray;
 			this->label3->Location = System::Drawing::Point(531, 9);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(447, 65);
+			this->label3->Size = System::Drawing::Size(471, 65);
 			this->label3->TabIndex = 27;
 			this->label3->Text = L"Gestion des Villes";
-			this->label3->Click += gcnew System::EventHandler(this, &VueVille::label3_Click);
 			// 
 			// VueVille
 			// 
