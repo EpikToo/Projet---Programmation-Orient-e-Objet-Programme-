@@ -261,30 +261,30 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_id
 			// 
-			this->txt_id->Location = System::Drawing::Point(59, 15);
+			this->txt_id->Location = System::Drawing::Point(81, 16);
 			this->txt_id->Name = L"txt_id";
 			this->txt_id->Size = System::Drawing::Size(228, 20);
 			this->txt_id->TabIndex = 5;
 			// 
 			// txt_code
 			// 
-			this->txt_code->Location = System::Drawing::Point(59, 50);
+			this->txt_code->Location = System::Drawing::Point(81, 51);
 			this->txt_code->Name = L"txt_code";
 			this->txt_code->Size = System::Drawing::Size(228, 20);
 			this->txt_code->TabIndex = 6;
 			// 
 			// txt_nom
 			// 
-			this->txt_nom->Location = System::Drawing::Point(59, 100);
+			this->txt_nom->Location = System::Drawing::Point(81, 85);
 			this->txt_nom->Name = L"txt_nom";
 			this->txt_nom->Size = System::Drawing::Size(228, 20);
 			this->txt_nom->TabIndex = 7;
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(44, 561);
+			this->richTextBox1->Location = System::Drawing::Point(696, 552);
 			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(591, 39);
+			this->richTextBox1->Size = System::Drawing::Size(163, 57);
 			this->richTextBox1->TabIndex = 14;
 			this->richTextBox1->Text = L"";
 			// 
@@ -295,7 +295,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label4->Location = System::Drawing::Point(20, 537);
+			this->label4->Location = System::Drawing::Point(616, 568);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(74, 29);
 			this->label4->TabIndex = 15;
@@ -303,9 +303,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_end
 			// 
-			this->btn_end->Location = System::Drawing::Point(437, 531);
+			this->btn_end->Location = System::Drawing::Point(859, 507);
 			this->btn_end->Name = L"btn_end";
-			this->btn_end->Size = System::Drawing::Size(47, 24);
+			this->btn_end->Size = System::Drawing::Size(65, 24);
 			this->btn_end->TabIndex = 16;
 			this->btn_end->Text = L">>";
 			this->btn_end->UseVisualStyleBackColor = true;
@@ -313,7 +313,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_next
 			// 
-			this->btn_next->Location = System::Drawing::Point(354, 531);
+			this->btn_next->Location = System::Drawing::Point(765, 507);
 			this->btn_next->Name = L"btn_next";
 			this->btn_next->Size = System::Drawing::Size(55, 24);
 			this->btn_next->TabIndex = 17;
@@ -323,7 +323,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_previous
 			// 
-			this->btn_previous->Location = System::Drawing::Point(258, 531);
+			this->btn_previous->Location = System::Drawing::Point(664, 507);
 			this->btn_previous->Name = L"btn_previous";
 			this->btn_previous->Size = System::Drawing::Size(60, 24);
 			this->btn_previous->TabIndex = 18;
@@ -333,7 +333,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_first
 			// 
-			this->btn_first->Location = System::Drawing::Point(166, 531);
+			this->btn_first->Location = System::Drawing::Point(559, 508);
 			this->btn_first->Name = L"btn_first";
 			this->btn_first->Size = System::Drawing::Size(65, 24);
 			this->btn_first->TabIndex = 19;
@@ -353,22 +353,22 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_telephone
 			// 
-			this->txt_telephone->Location = System::Drawing::Point(81, 277);
+			this->txt_telephone->Location = System::Drawing::Point(81, 218);
 			this->txt_telephone->Name = L"txt_telephone";
-			this->txt_telephone->Size = System::Drawing::Size(206, 20);
+			this->txt_telephone->Size = System::Drawing::Size(228, 20);
 			this->txt_telephone->TabIndex = 22;
 			this->txt_telephone->TextChanged += gcnew System::EventHandler(this, &VueClients::textBox2_TextChanged);
 			// 
 			// txt_email
 			// 
-			this->txt_email->Location = System::Drawing::Point(59, 233);
+			this->txt_email->Location = System::Drawing::Point(81, 185);
 			this->txt_email->Name = L"txt_email";
 			this->txt_email->Size = System::Drawing::Size(228, 20);
 			this->txt_email->TabIndex = 23;
 			// 
 			// txt_prenom
 			// 
-			this->txt_prenom->Location = System::Drawing::Point(59, 148);
+			this->txt_prenom->Location = System::Drawing::Point(81, 121);
 			this->txt_prenom->Name = L"txt_prenom";
 			this->txt_prenom->Size = System::Drawing::Size(228, 20);
 			this->txt_prenom->TabIndex = 24;
@@ -439,7 +439,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->pictureBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)));
 			this->pictureBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->pictureBox1->Location = System::Drawing::Point(315, 12);
+			this->pictureBox1->Location = System::Drawing::Point(345, 42);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(169, 132);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -450,7 +450,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(361, 151);
+			this->button1->Location = System::Drawing::Point(394, 186);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(69, 23);
 			this->button1->TabIndex = 29;
@@ -461,23 +461,23 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// txt_date_anniversaire
 			// 
 			this->txt_date_anniversaire->EditValue = nullptr;
-			this->txt_date_anniversaire->Location = System::Drawing::Point(101, 313);
+			this->txt_date_anniversaire->Location = System::Drawing::Point(81, 251);
 			this->txt_date_anniversaire->Name = L"txt_date_anniversaire";
 			this->txt_date_anniversaire->Properties->Buttons->AddRange(gcnew cli::array< DevExpress::XtraEditors::Controls::EditorButton^  >(1) { (gcnew DevExpress::XtraEditors::Controls::EditorButton(DevExpress::XtraEditors::Controls::ButtonPredefines::Combo)) });
 			this->txt_date_anniversaire->Properties->CalendarTimeProperties->Buttons->AddRange(gcnew cli::array< DevExpress::XtraEditors::Controls::EditorButton^  >(1) { (gcnew DevExpress::XtraEditors::Controls::EditorButton(DevExpress::XtraEditors::Controls::ButtonPredefines::Combo)) });
-			this->txt_date_anniversaire->Size = System::Drawing::Size(186, 20);
+			this->txt_date_anniversaire->Size = System::Drawing::Size(227, 20);
 			this->txt_date_anniversaire->TabIndex = 31;
 			// 
 			// label10
 			// 
 			this->label10->AutoSize = true;
 			this->label10->BackColor = System::Drawing::Color::Transparent;
-			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label10->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label10->Location = System::Drawing::Point(3, 307);
+			this->label10->Location = System::Drawing::Point(2, 249);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(92, 32);
+			this->label10->Size = System::Drawing::Size(72, 26);
 			this->label10->TabIndex = 32;
 			this->label10->Text = L"Date\r\nd\'anniversaire";
 			// 
@@ -488,7 +488,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label11->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label11->Location = System::Drawing::Point(2, 277);
+			this->label11->Location = System::Drawing::Point(4, 219);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(73, 16);
 			this->label11->TabIndex = 33;
@@ -501,7 +501,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label12->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label12->Location = System::Drawing::Point(10, 237);
+			this->label12->Location = System::Drawing::Point(32, 186);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(41, 16);
 			this->label12->TabIndex = 34;
@@ -514,7 +514,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label1->Location = System::Drawing::Point(7, 192);
+			this->label1->Location = System::Drawing::Point(29, 154);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(44, 16);
 			this->label1->TabIndex = 35;
@@ -527,7 +527,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label2->Location = System::Drawing::Point(7, 54);
+			this->label2->Location = System::Drawing::Point(37, 51);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(40, 16);
 			this->label2->TabIndex = 36;
@@ -540,7 +540,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label3->Location = System::Drawing::Point(2, 151);
+			this->label3->Location = System::Drawing::Point(23, 122);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(54, 16);
 			this->label3->TabIndex = 36;
@@ -553,7 +553,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label5->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label5->Location = System::Drawing::Point(7, 104);
+			this->label5->Location = System::Drawing::Point(37, 85);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(36, 16);
 			this->label5->TabIndex = 37;
@@ -566,7 +566,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label13->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label13->Location = System::Drawing::Point(12, 16);
+			this->label13->Location = System::Drawing::Point(48, 17);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(20, 16);
 			this->label13->TabIndex = 38;
@@ -589,16 +589,16 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->txt_genre->FormattingEnabled = true;
 			this->txt_genre->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Homme", L"Femme", L"Autre" });
-			this->txt_genre->Location = System::Drawing::Point(59, 192);
+			this->txt_genre->Location = System::Drawing::Point(81, 153);
 			this->txt_genre->Name = L"txt_genre";
 			this->txt_genre->Size = System::Drawing::Size(228, 21);
 			this->txt_genre->TabIndex = 41;
 			// 
 			// txt_id_adresse
 			// 
-			this->txt_id_adresse->Location = System::Drawing::Point(81, 356);
+			this->txt_id_adresse->Location = System::Drawing::Point(81, 281);
 			this->txt_id_adresse->Name = L"txt_id_adresse";
-			this->txt_id_adresse->Size = System::Drawing::Size(206, 20);
+			this->txt_id_adresse->Size = System::Drawing::Size(227, 20);
 			this->txt_id_adresse->TabIndex = 42;
 			// 
 			// label15
@@ -608,7 +608,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label15->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label15->Location = System::Drawing::Point(3, 360);
+			this->label15->Location = System::Drawing::Point(4, 285);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(74, 16);
 			this->label15->TabIndex = 43;
@@ -616,9 +616,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_numero_rue
 			// 
-			this->txt_numero_rue->Location = System::Drawing::Point(81, 402);
+			this->txt_numero_rue->Location = System::Drawing::Point(81, 311);
 			this->txt_numero_rue->Name = L"txt_numero_rue";
-			this->txt_numero_rue->Size = System::Drawing::Size(206, 20);
+			this->txt_numero_rue->Size = System::Drawing::Size(228, 20);
 			this->txt_numero_rue->TabIndex = 44;
 			// 
 			// label16
@@ -628,7 +628,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label16->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label16->Location = System::Drawing::Point(3, 403);
+			this->label16->Location = System::Drawing::Point(2, 312);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(77, 16);
 			this->label16->TabIndex = 45;
@@ -636,23 +636,23 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_numero_logement
 			// 
-			this->txt_numero_logement->Location = System::Drawing::Point(81, 447);
+			this->txt_numero_logement->Location = System::Drawing::Point(80, 339);
 			this->txt_numero_logement->Name = L"txt_numero_logement";
-			this->txt_numero_logement->Size = System::Drawing::Size(206, 20);
+			this->txt_numero_logement->Size = System::Drawing::Size(229, 20);
 			this->txt_numero_logement->TabIndex = 46;
 			// 
 			// txt_nom_rue
 			// 
-			this->txt_nom_rue->Location = System::Drawing::Point(81, 479);
+			this->txt_nom_rue->Location = System::Drawing::Point(80, 368);
 			this->txt_nom_rue->Name = L"txt_nom_rue";
-			this->txt_nom_rue->Size = System::Drawing::Size(206, 20);
+			this->txt_nom_rue->Size = System::Drawing::Size(229, 20);
 			this->txt_nom_rue->TabIndex = 47;
 			// 
 			// txt_nom_residence
 			// 
-			this->txt_nom_residence->Location = System::Drawing::Point(374, 208);
+			this->txt_nom_residence->Location = System::Drawing::Point(79, 399);
 			this->txt_nom_residence->Name = L"txt_nom_residence";
-			this->txt_nom_residence->Size = System::Drawing::Size(147, 20);
+			this->txt_nom_residence->Size = System::Drawing::Size(229, 20);
 			this->txt_nom_residence->TabIndex = 49;
 			// 
 			// label17
@@ -662,7 +662,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label17->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label17->Location = System::Drawing::Point(2, 436);
+			this->label17->Location = System::Drawing::Point(8, 328);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(66, 32);
 			this->label17->TabIndex = 50;
@@ -675,7 +675,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label18->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label18->Location = System::Drawing::Point(2, 479);
+			this->label18->Location = System::Drawing::Point(16, 372);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(58, 16);
 			this->label18->TabIndex = 51;
@@ -685,40 +685,40 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->label19->AutoSize = true;
 			this->label19->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label19->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label19->Location = System::Drawing::Point(295, 200);
+			this->label19->Location = System::Drawing::Point(20, 393);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(67, 32);
+			this->label19->Size = System::Drawing::Size(53, 26);
 			this->label19->TabIndex = 52;
 			this->label19->Text = L"Nom \r\nrésidence";
 			// 
 			// txt_nom_batiment
 			// 
-			this->txt_nom_batiment->Location = System::Drawing::Point(374, 273);
+			this->txt_nom_batiment->Location = System::Drawing::Point(79, 432);
 			this->txt_nom_batiment->Name = L"txt_nom_batiment";
-			this->txt_nom_batiment->Size = System::Drawing::Size(147, 20);
+			this->txt_nom_batiment->Size = System::Drawing::Size(229, 20);
 			this->txt_nom_batiment->TabIndex = 53;
 			// 
 			// label20
 			// 
 			this->label20->AutoSize = true;
 			this->label20->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label20->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label20->Location = System::Drawing::Point(295, 265);
+			this->label20->Location = System::Drawing::Point(23, 426);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(61, 32);
+			this->label20->Size = System::Drawing::Size(50, 26);
 			this->label20->TabIndex = 54;
 			this->label20->Text = L"Nom\r\n bâtiment";
 			// 
 			// txt_etage
 			// 
-			this->txt_etage->Location = System::Drawing::Point(374, 325);
+			this->txt_etage->Location = System::Drawing::Point(79, 464);
 			this->txt_etage->Name = L"txt_etage";
-			this->txt_etage->Size = System::Drawing::Size(147, 20);
+			this->txt_etage->Size = System::Drawing::Size(230, 20);
 			this->txt_etage->TabIndex = 55;
 			this->txt_etage->TextChanged += gcnew System::EventHandler(this, &VueClients::textBox2_TextChanged_1);
 			// 
@@ -729,7 +729,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label21->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label21->Location = System::Drawing::Point(295, 329);
+			this->label21->Location = System::Drawing::Point(29, 468);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(43, 16);
 			this->label21->TabIndex = 56;
@@ -737,35 +737,35 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_type_adresse
 			// 
-			this->txt_type_adresse->Location = System::Drawing::Point(374, 386);
+			this->txt_type_adresse->Location = System::Drawing::Point(79, 498);
 			this->txt_type_adresse->Name = L"txt_type_adresse";
-			this->txt_type_adresse->Size = System::Drawing::Size(147, 20);
+			this->txt_type_adresse->Size = System::Drawing::Size(229, 20);
 			this->txt_type_adresse->TabIndex = 57;
 			// 
 			// txt_id_client
 			// 
-			this->txt_id_client->Location = System::Drawing::Point(374, 479);
+			this->txt_id_client->Location = System::Drawing::Point(79, 564);
 			this->txt_id_client->Name = L"txt_id_client";
-			this->txt_id_client->Size = System::Drawing::Size(147, 20);
+			this->txt_id_client->Size = System::Drawing::Size(229, 20);
 			this->txt_id_client->TabIndex = 58;
 			// 
 			// txt_nom_ville
 			// 
-			this->txt_nom_ville->Location = System::Drawing::Point(374, 435);
+			this->txt_nom_ville->Location = System::Drawing::Point(79, 532);
 			this->txt_nom_ville->Name = L"txt_nom_ville";
-			this->txt_nom_ville->Size = System::Drawing::Size(147, 20);
+			this->txt_nom_ville->Size = System::Drawing::Size(229, 20);
 			this->txt_nom_ville->TabIndex = 59;
 			// 
 			// label22
 			// 
 			this->label22->AutoSize = true;
 			this->label22->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label22->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label22->Location = System::Drawing::Point(295, 374);
+			this->label22->Location = System::Drawing::Point(14, 495);
 			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(70, 32);
+			this->label22->Size = System::Drawing::Size(56, 26);
 			this->label22->TabIndex = 60;
 			this->label22->Text = L"Type\r\n adresse 1";
 			// 
@@ -776,7 +776,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label23->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label23->Location = System::Drawing::Point(295, 439);
+			this->label23->Location = System::Drawing::Point(29, 533);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(33, 16);
 			this->label23->TabIndex = 61;
@@ -789,7 +789,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label24->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label24->Location = System::Drawing::Point(295, 480);
+			this->label24->Location = System::Drawing::Point(20, 568);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(56, 16);
 			this->label24->TabIndex = 62;
