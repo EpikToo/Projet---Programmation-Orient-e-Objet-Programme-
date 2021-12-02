@@ -13,20 +13,15 @@ System::Data::DataSet^ NS_Comp_Svc5::CLservices::selectionnerTout(System::String
 	return this->oCad->Lignes(sql, dataTableName);
 }
 
-void NS_Comp_Svc5::CLservices::ajouterUnPersonnel(System::String^ nom, System::String^ prenom, System::String^ date, System::Int32^ id_superieur, System::Int32^ numero_rue, System::Int32^ numero_logement, System::String^ nom_rue, System::String^ nom_residence, System::String^ nom_batiment, System::Int32^ etage, System::String^ nom_ville)
+void NS_Comp_Svc5::CLservices::ajouterUnPersonnel(System::String^ nom, System::String^ prenom, System::String^ date,System::String^ typeadresse2, System::Int32^ id_adresse, System::Int32^ id_superieur)
 {
 	System::String^ sql;
 	this->oMappTB->setNom(nom);
 	this->oMappTB->setPrenom(prenom);
 	this->oMappTB->setDate_embauche(date);
+	this->oMappTB->setTypeadresse2(typeadresse2);
+	this->oMappTB->setId_adresse(id_adresse);
 	this->oMappTB->setId_personnel_superieur_hierarchique(id_superieur);
-	this->oMappTB->setNumero_rue(numero_rue);
-	this->oMappTB->setNumero_logement(numero_logement);
-	this->oMappTB->setNom_Rue(nom_rue);
-	this->oMappTB->setNom_Residence(nom_residence);
-	this->oMappTB->setNom_batiment(nom_batiment);
-	this->oMappTB->setEtage(etage);
-	this->oMappTB->setNom_ville(nom_ville);
 	sql = this->oMappTB->Insert();
 
 	this->oCad->Modification(sql);
@@ -40,21 +35,16 @@ void NS_Comp_Svc5::CLservices::supprimerUnPersonnel(System::Int32^ id_personnel)
 	this->oCad->Modification(sql);
 }
 
-void NS_Comp_Svc5::CLservices::ModifierUnPersonnel(System::Int32^ id, System::String^ nom, System::String^ prenom, System::String^ date, System::Int32^ id_superieur, System::Int32^ numero_rue, System::Int32^ numero_logement, System::String^ nom_rue, System::String^ nom_residence, System::String^ nom_batiment, System::Int32^ etage, System::String^ nom_ville)
+void NS_Comp_Svc5::CLservices::ModifierUnPersonnel(System::Int32^ id, System::String^ nom, System::String^ prenom, System::String^ date,System::String^ typeadresse2, System::Int32^ id_adresse, System::Int32^ id_superieur)
 {
 	System::String^ sql;
 	this->oMappTB->setId(id);
 	this->oMappTB->setNom(nom);
 	this->oMappTB->setPrenom(prenom);
 	this->oMappTB->setDate_embauche(date);
+	this->oMappTB->setTypeadresse2(typeadresse2);
+	this->oMappTB->setId_adresse(id_adresse);
 	this->oMappTB->setId_personnel_superieur_hierarchique(id_superieur);
-	this->oMappTB->setNumero_rue(numero_rue);
-	this->oMappTB->setNumero_logement(numero_logement);
-	this->oMappTB->setNom_Rue(nom_rue);
-	this->oMappTB->setNom_Residence(nom_residence);
-	this->oMappTB->setNom_batiment(nom_batiment);
-	this->oMappTB->setEtage(etage);
-	this->oMappTB->setNom_ville(nom_ville);
 	sql = this->oMappTB->Update();
 	this->oCad->Modification(sql);
 }

@@ -15,6 +15,7 @@ namespace NS_Comp_Mappage6
 		System::Decimal^ montant_ttc;
 		System::Int32^ id_client;
 
+
 	public:
 		System::String^ Select(void) override;
 		System::String^ Insert(void) override;

@@ -12,8 +12,8 @@ namespace NS_Comp_Svc5
 	public:
 		CLservices(void);
 		System::Data::DataSet^ selectionnerTout(System::String^);
-		void ajouterUnPersonnel(System::String^, System::String^, System::String^, System::Int32^, System::Int32^, System::Int32^, System::String^, System::String^, System::String^, System::Int32^, System::String^);
+		void ajouterUnPersonnel(System::String^, System::String^, System::String^,System::String^, System::Int32^, System::Int32^);
 		void supprimerUnPersonnel(System::Int32^);
-		void ModifierUnPersonnel(System::Int32^, System::String^, System::String^, System::String^, System::Int32^, System::Int32^, System::Int32^, System::String^, System::String^, System::String^, System::Int32^, System::String^);
+		void ModifierUnPersonnel(System::Int32^, System::String^, System::String^, System::String^, System::String^, System::Int32^, System::Int32^);
 	};
 }
