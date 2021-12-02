@@ -161,42 +161,46 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_load
 			// 
+			this->btn_load->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_load->Location = System::Drawing::Point(152, 331);
 			this->btn_load->Name = L"btn_load";
 			this->btn_load->Size = System::Drawing::Size(148, 193);
 			this->btn_load->TabIndex = 1;
 			this->btn_load->Text = L"Charger";
-			this->btn_load->UseVisualStyleBackColor = true;
+			this->btn_load->UseVisualStyleBackColor = false;
 			this->btn_load->Click += gcnew System::EventHandler(this, &VuePersonnel::btn_load_Click);
 			// 
 			// btn_insert
 			// 
+			this->btn_insert->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_insert->Location = System::Drawing::Point(49, 331);
 			this->btn_insert->Name = L"btn_insert";
 			this->btn_insert->Size = System::Drawing::Size(75, 37);
 			this->btn_insert->TabIndex = 2;
 			this->btn_insert->Text = L"Nouveau";
-			this->btn_insert->UseVisualStyleBackColor = true;
+			this->btn_insert->UseVisualStyleBackColor = false;
 			this->btn_insert->Click += gcnew System::EventHandler(this, &VuePersonnel::btn_insert_Click);
 			// 
 			// btn_delete
 			// 
+			this->btn_delete->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_delete->Location = System::Drawing::Point(49, 487);
 			this->btn_delete->Name = L"btn_delete";
 			this->btn_delete->Size = System::Drawing::Size(75, 37);
 			this->btn_delete->TabIndex = 3;
 			this->btn_delete->Text = L"Supprimer";
-			this->btn_delete->UseVisualStyleBackColor = true;
+			this->btn_delete->UseVisualStyleBackColor = false;
 			this->btn_delete->Click += gcnew System::EventHandler(this, &VuePersonnel::btn_delete_Click);
 			// 
 			// btn_update
 			// 
+			this->btn_update->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btn_update->Location = System::Drawing::Point(49, 409);
 			this->btn_update->Name = L"btn_update";
 			this->btn_update->Size = System::Drawing::Size(75, 37);
 			this->btn_update->TabIndex = 4;
 			this->btn_update->Text = L"Mise à jour";
-			this->btn_update->UseVisualStyleBackColor = true;
+			this->btn_update->UseVisualStyleBackColor = false;
 			this->btn_update->Click += gcnew System::EventHandler(this, &VuePersonnel::btn_update_Click);
 			// 
 			// txt_id
@@ -307,12 +311,13 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button2
 			// 
+			this->button2->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->button2->Location = System::Drawing::Point(905, 552);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(132, 47);
 			this->button2->TabIndex = 20;
 			this->button2->Text = L"Accès au menu";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &VuePersonnel::button2_Click_1);
 			// 
 			// textBox1
