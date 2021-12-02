@@ -133,7 +133,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::SteelBlue;
+			this->button1->BackColor = System::Drawing::Color::White;
 			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->button1->Cursor = System::Windows::Forms::Cursors::Default;
 			this->button1->Location = System::Drawing::Point(27, 553);
