@@ -32,3 +32,5 @@ namespace NS_Comp_Mappage5
 		System::Int32^ getId(void);
 	};
 }
+
+/* PA */

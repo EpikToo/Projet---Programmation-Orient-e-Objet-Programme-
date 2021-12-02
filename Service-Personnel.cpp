@@ -48,3 +48,5 @@ void NS_Comp_Svc5::CLservices::ModifierUnPersonnel(System::Int32^ id, System::St
 	sql = this->oMappTB->Update();
 	this->oCad->Modification(sql);
 }
+
+/* PA */
