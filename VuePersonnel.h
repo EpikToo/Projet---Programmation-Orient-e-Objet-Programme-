@@ -98,7 +98,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(VuePersonnel::typeid));
 			this->dgv_enr = (gcnew System::Windows::Forms::DataGridView());
 			this->btn_load = (gcnew System::Windows::Forms::Button());
 			this->btn_insert = (gcnew System::Windows::Forms::Button());
@@ -387,7 +386,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
 			this->AutoSize = true;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
 			this->Controls->Add(this->textBox11);

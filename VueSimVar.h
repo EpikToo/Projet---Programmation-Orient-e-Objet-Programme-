@@ -110,6 +110,8 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: System::Windows::Forms::Button^ button1;
 
 	private: System::Windows::Forms::ListBox^ listBox1;
+	private: System::Windows::Forms::Label^ label1;
+
 
 
 
@@ -175,6 +177,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->checkBox15 = (gcnew System::Windows::Forms::CheckBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->groupBox2->SuspendLayout();
 			this->groupBox3->SuspendLayout();
@@ -193,9 +196,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(44, 561);
+			this->richTextBox1->Location = System::Drawing::Point(566, 552);
 			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(591, 39);
+			this->richTextBox1->Size = System::Drawing::Size(301, 57);
 			this->richTextBox1->TabIndex = 14;
 			this->richTextBox1->Text = L"";
 			// 
@@ -206,7 +209,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label4->Location = System::Drawing::Point(22, 529);
+			this->label4->Location = System::Drawing::Point(486, 568);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(74, 29);
 			this->label4->TabIndex = 15;
@@ -229,17 +232,17 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label14->Font = (gcnew System::Drawing::Font(L"Gadugi", 32.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label14->ForeColor = System::Drawing::Color::SlateGray;
-			this->label14->Location = System::Drawing::Point(369, 9);
+			this->label14->Location = System::Drawing::Point(308, 9);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(115, 51);
+			this->label14->Size = System::Drawing::Size(378, 51);
 			this->label14->TabIndex = 40;
-			this->label14->Text = L"Stats";
+			this->label14->Text = L"Gestion Simulation";
 			// 
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
 			this->checkBox1->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox1->Location = System::Drawing::Point(6, 20);
+			this->checkBox1->Location = System::Drawing::Point(40, 21);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(46, 17);
 			this->checkBox1->TabIndex = 42;
@@ -249,13 +252,13 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// groupBox2
 			// 
-			this->groupBox2->BackColor = System::Drawing::Color::White;
+			this->groupBox2->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox2->Controls->Add(this->checkBox3);
 			this->groupBox2->Controls->Add(this->checkBox2);
 			this->groupBox2->Controls->Add(this->checkBox1);
-			this->groupBox2->Location = System::Drawing::Point(44, 80);
+			this->groupBox2->Location = System::Drawing::Point(44, 210);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(324, 47);
+			this->groupBox2->Size = System::Drawing::Size(324, 46);
 			this->groupBox2->TabIndex = 43;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"TVA";
@@ -264,7 +267,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox3->AutoSize = true;
 			this->checkBox3->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox3->Location = System::Drawing::Point(224, 21);
+			this->checkBox3->Location = System::Drawing::Point(250, 21);
 			this->checkBox3->Name = L"checkBox3";
 			this->checkBox3->Size = System::Drawing::Size(46, 17);
 			this->checkBox3->TabIndex = 44;
@@ -276,7 +279,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox2->AutoSize = true;
 			this->checkBox2->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox2->Location = System::Drawing::Point(104, 21);
+			this->checkBox2->Location = System::Drawing::Point(145, 21);
 			this->checkBox2->Name = L"checkBox2";
 			this->checkBox2->Size = System::Drawing::Size(46, 17);
 			this->checkBox2->TabIndex = 43;
@@ -286,13 +289,13 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// groupBox3
 			// 
-			this->groupBox3->BackColor = System::Drawing::Color::White;
+			this->groupBox3->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox3->Controls->Add(this->checkBox4);
 			this->groupBox3->Controls->Add(this->checkBox5);
 			this->groupBox3->Controls->Add(this->checkBox6);
-			this->groupBox3->Location = System::Drawing::Point(44, 150);
+			this->groupBox3->Location = System::Drawing::Point(44, 262);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(324, 47);
+			this->groupBox3->Size = System::Drawing::Size(324, 46);
 			this->groupBox3->TabIndex = 45;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"Marge commerciale";
@@ -301,7 +304,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox4->AutoSize = true;
 			this->checkBox4->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox4->Location = System::Drawing::Point(224, 21);
+			this->checkBox4->Location = System::Drawing::Point(250, 19);
 			this->checkBox4->Name = L"checkBox4";
 			this->checkBox4->Size = System::Drawing::Size(46, 17);
 			this->checkBox4->TabIndex = 44;
@@ -313,7 +316,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox5->AutoSize = true;
 			this->checkBox5->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox5->Location = System::Drawing::Point(104, 21);
+			this->checkBox5->Location = System::Drawing::Point(145, 19);
 			this->checkBox5->Name = L"checkBox5";
 			this->checkBox5->Size = System::Drawing::Size(46, 17);
 			this->checkBox5->TabIndex = 43;
@@ -325,7 +328,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox6->AutoSize = true;
 			this->checkBox6->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox6->Location = System::Drawing::Point(6, 20);
+			this->checkBox6->Location = System::Drawing::Point(40, 21);
 			this->checkBox6->Name = L"checkBox6";
 			this->checkBox6->Size = System::Drawing::Size(40, 17);
 			this->checkBox6->TabIndex = 42;
@@ -335,12 +338,12 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// groupBox5
 			// 
-			this->groupBox5->BackColor = System::Drawing::Color::White;
+			this->groupBox5->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox5->Controls->Add(this->checkBox11);
 			this->groupBox5->Controls->Add(this->checkBox12);
-			this->groupBox5->Location = System::Drawing::Point(44, 222);
+			this->groupBox5->Location = System::Drawing::Point(44, 314);
 			this->groupBox5->Name = L"groupBox5";
-			this->groupBox5->Size = System::Drawing::Size(324, 49);
+			this->groupBox5->Size = System::Drawing::Size(324, 46);
 			this->groupBox5->TabIndex = 46;
 			this->groupBox5->TabStop = false;
 			this->groupBox5->Text = L"Remise commerciale";
@@ -349,7 +352,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox11->AutoSize = true;
 			this->checkBox11->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox11->Location = System::Drawing::Point(198, 19);
+			this->checkBox11->Location = System::Drawing::Point(203, 19);
 			this->checkBox11->Name = L"checkBox11";
 			this->checkBox11->Size = System::Drawing::Size(40, 17);
 			this->checkBox11->TabIndex = 43;
@@ -361,7 +364,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox12->AutoSize = true;
 			this->checkBox12->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox12->Location = System::Drawing::Point(60, 19);
+			this->checkBox12->Location = System::Drawing::Point(81, 19);
 			this->checkBox12->Name = L"checkBox12";
 			this->checkBox12->Size = System::Drawing::Size(40, 17);
 			this->checkBox12->TabIndex = 42;
@@ -371,13 +374,13 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// groupBox6
 			// 
-			this->groupBox6->BackColor = System::Drawing::Color::White;
+			this->groupBox6->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox6->Controls->Add(this->checkBox13);
 			this->groupBox6->Controls->Add(this->checkBox14);
 			this->groupBox6->Controls->Add(this->checkBox15);
-			this->groupBox6->Location = System::Drawing::Point(44, 299);
+			this->groupBox6->Location = System::Drawing::Point(44, 366);
 			this->groupBox6->Name = L"groupBox6";
-			this->groupBox6->Size = System::Drawing::Size(324, 47);
+			this->groupBox6->Size = System::Drawing::Size(324, 46);
 			this->groupBox6->TabIndex = 47;
 			this->groupBox6->TabStop = false;
 			this->groupBox6->Text = L"Démarche inconnue";
@@ -387,7 +390,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox13->AutoSize = true;
 			this->checkBox13->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox13->Location = System::Drawing::Point(224, 21);
+			this->checkBox13->Location = System::Drawing::Point(250, 21);
 			this->checkBox13->Name = L"checkBox13";
 			this->checkBox13->Size = System::Drawing::Size(40, 17);
 			this->checkBox13->TabIndex = 44;
@@ -399,7 +402,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox14->AutoSize = true;
 			this->checkBox14->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox14->Location = System::Drawing::Point(104, 21);
+			this->checkBox14->Location = System::Drawing::Point(145, 21);
 			this->checkBox14->Name = L"checkBox14";
 			this->checkBox14->Size = System::Drawing::Size(40, 17);
 			this->checkBox14->TabIndex = 43;
@@ -411,7 +414,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			this->checkBox15->AutoSize = true;
 			this->checkBox15->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox15->Location = System::Drawing::Point(6, 20);
+			this->checkBox15->Location = System::Drawing::Point(40, 21);
 			this->checkBox15->Name = L"checkBox15";
 			this->checkBox15->Size = System::Drawing::Size(40, 17);
 			this->checkBox15->TabIndex = 42;
@@ -421,21 +424,32 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(78, 419);
+			this->button1->BackColor = System::Drawing::SystemColors::Window;
+			this->button1->Location = System::Drawing::Point(44, 432);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(110, 36);
+			this->button1->Size = System::Drawing::Size(121, 108);
 			this->button1->TabIndex = 48;
-			this->button1->Text = L"Réinitialiser";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Text = L"Réinitialiser Valeur";
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &SimVar::button1_Click_2);
 			// 
 			// listBox1
 			// 
 			this->listBox1->FormattingEnabled = true;
-			this->listBox1->Location = System::Drawing::Point(268, 391);
+			this->listBox1->Location = System::Drawing::Point(247, 432);
 			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(129, 108);
+			this->listBox1->Size = System::Drawing::Size(121, 108);
 			this->listBox1->TabIndex = 54;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(41, 119);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(0, 13);
+			this->label1->TabIndex = 56;
 			// 
 			// SimVar
 			// 
@@ -444,6 +458,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->AutoSize = true;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ClientSize = System::Drawing::Size(1049, 611);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->listBox1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->groupBox6);
@@ -735,5 +750,6 @@ private: System::Void checkBox13_CheckedChanged(System::Object^ sender, System::
 
 	}
 }
+
 };
 }

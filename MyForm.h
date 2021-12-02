@@ -109,20 +109,20 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button3
 			// 
 			this->button3->BackColor = System::Drawing::SystemColors::Control;
-			this->button3->Location = System::Drawing::Point(53, 79);
+			this->button3->Location = System::Drawing::Point(27, 79);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(247, 52);
+			this->button3->Size = System::Drawing::Size(273, 52);
 			this->button3->TabIndex = 25;
-			this->button3->Text = L"Adresses";
+			this->button3->Text = L"Gestion des adresses";
 			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button2
 			// 
 			this->button2->BackColor = System::Drawing::SystemColors::Control;
-			this->button2->Location = System::Drawing::Point(53, 21);
+			this->button2->Location = System::Drawing::Point(27, 21);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(247, 52);
+			this->button2->Size = System::Drawing::Size(273, 52);
 			this->button2->TabIndex = 24;
 			this->button2->Text = L"Gestion de Clients";
 			this->button2->UseVisualStyleBackColor = false;
@@ -144,44 +144,44 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button4
 			// 
 			this->button4->BackColor = System::Drawing::SystemColors::Control;
-			this->button4->Location = System::Drawing::Point(53, 137);
+			this->button4->Location = System::Drawing::Point(27, 137);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(247, 52);
+			this->button4->Size = System::Drawing::Size(273, 52);
 			this->button4->TabIndex = 27;
-			this->button4->Text = L"Ville";
+			this->button4->Text = L"Gestion des villes";
 			this->button4->UseVisualStyleBackColor = false;
 			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// button5
 			// 
 			this->button5->BackColor = System::Drawing::SystemColors::Control;
-			this->button5->Location = System::Drawing::Point(53, 372);
+			this->button5->Location = System::Drawing::Point(27, 369);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(247, 52);
+			this->button5->Size = System::Drawing::Size(273, 52);
 			this->button5->TabIndex = 28;
-			this->button5->Text = L"Catalogue";
+			this->button5->Text = L"Gestion du catalogue";
 			this->button5->UseVisualStyleBackColor = false;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
 			// button6
 			// 
 			this->button6->BackColor = System::Drawing::SystemColors::Control;
-			this->button6->Location = System::Drawing::Point(53, 314);
+			this->button6->Location = System::Drawing::Point(27, 311);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(247, 52);
+			this->button6->Size = System::Drawing::Size(273, 52);
 			this->button6->TabIndex = 29;
-			this->button6->Text = L"Personnel";
+			this->button6->Text = L"Gestion du personnel";
 			this->button6->UseVisualStyleBackColor = false;
 			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
 			// 
 			// button7
 			// 
 			this->button7->BackColor = System::Drawing::SystemColors::Control;
-			this->button7->Location = System::Drawing::Point(53, 198);
+			this->button7->Location = System::Drawing::Point(27, 195);
 			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(247, 52);
+			this->button7->Size = System::Drawing::Size(273, 52);
 			this->button7->TabIndex = 30;
-			this->button7->Text = L"Commande";
+			this->button7->Text = L"Gestion des commandes";
 			this->button7->UseVisualStyleBackColor = false;
 			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
 			// 
@@ -198,11 +198,11 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button9
 			// 
 			this->button9->BackColor = System::Drawing::SystemColors::Control;
-			this->button9->Location = System::Drawing::Point(53, 256);
+			this->button9->Location = System::Drawing::Point(27, 253);
 			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(247, 52);
+			this->button9->Size = System::Drawing::Size(273, 52);
 			this->button9->TabIndex = 32;
-			this->button9->Text = L"Facture";
+			this->button9->Text = L"Gestion des factures";
 			this->button9->UseVisualStyleBackColor = false;
 			this->button9->Click += gcnew System::EventHandler(this, &MyForm::button9_Click);
 			// 
@@ -258,9 +258,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button10
 			// 
 			this->button10->BackColor = System::Drawing::SystemColors::Control;
-			this->button10->Location = System::Drawing::Point(53, 430);
+			this->button10->Location = System::Drawing::Point(27, 485);
 			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(247, 52);
+			this->button10->Size = System::Drawing::Size(273, 52);
 			this->button10->TabIndex = 37;
 			this->button10->Text = L"Simulation de valeurs";
 			this->button10->UseVisualStyleBackColor = false;
@@ -269,9 +269,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button11
 			// 
 			this->button11->BackColor = System::Drawing::SystemColors::Control;
-			this->button11->Location = System::Drawing::Point(53, 488);
+			this->button11->Location = System::Drawing::Point(27, 427);
 			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(247, 52);
+			this->button11->Size = System::Drawing::Size(273, 52);
 			this->button11->TabIndex = 38;
 			this->button11->Text = L"Gestion des statistiques";
 			this->button11->UseVisualStyleBackColor = false;

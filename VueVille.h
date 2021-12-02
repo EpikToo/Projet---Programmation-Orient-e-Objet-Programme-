@@ -86,7 +86,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(VueVille::typeid));
 			this->dgv_enr = (gcnew System::Windows::Forms::DataGridView());
 			this->btn_load = (gcnew System::Windows::Forms::Button());
 			this->btn_insert = (gcnew System::Windows::Forms::Button());
@@ -111,15 +110,15 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// dgv_enr
 			// 
 			this->dgv_enr->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dgv_enr->Location = System::Drawing::Point(334, 12);
+			this->dgv_enr->Location = System::Drawing::Point(334, 85);
 			this->dgv_enr->Name = L"dgv_enr";
-			this->dgv_enr->Size = System::Drawing::Size(703, 512);
+			this->dgv_enr->Size = System::Drawing::Size(703, 450);
 			this->dgv_enr->TabIndex = 0;
 			this->dgv_enr->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VueVille::dgv_enr_CellContentClick);
 			// 
 			// btn_load
 			// 
-			this->btn_load->Location = System::Drawing::Point(163, 259);
+			this->btn_load->Location = System::Drawing::Point(143, 353);
 			this->btn_load->Name = L"btn_load";
 			this->btn_load->Size = System::Drawing::Size(165, 237);
 			this->btn_load->TabIndex = 1;
@@ -129,7 +128,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_insert
 			// 
-			this->btn_insert->Location = System::Drawing::Point(32, 259);
+			this->btn_insert->Location = System::Drawing::Point(32, 353);
 			this->btn_insert->Name = L"btn_insert";
 			this->btn_insert->Size = System::Drawing::Size(92, 47);
 			this->btn_insert->TabIndex = 2;
@@ -139,7 +138,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_delete
 			// 
-			this->btn_delete->Location = System::Drawing::Point(32, 452);
+			this->btn_delete->Location = System::Drawing::Point(32, 546);
 			this->btn_delete->Name = L"btn_delete";
 			this->btn_delete->Size = System::Drawing::Size(92, 44);
 			this->btn_delete->TabIndex = 3;
@@ -149,7 +148,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_update
 			// 
-			this->btn_update->Location = System::Drawing::Point(32, 353);
+			this->btn_update->Location = System::Drawing::Point(32, 457);
 			this->btn_update->Name = L"btn_update";
 			this->btn_update->Size = System::Drawing::Size(92, 49);
 			this->btn_update->TabIndex = 4;
@@ -159,21 +158,21 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// txt_id
 			// 
-			this->txt_id->Location = System::Drawing::Point(32, 28);
+			this->txt_id->Location = System::Drawing::Point(27, 144);
 			this->txt_id->Name = L"txt_id";
 			this->txt_id->Size = System::Drawing::Size(263, 20);
 			this->txt_id->TabIndex = 5;
 			// 
 			// txt_code
 			// 
-			this->txt_code->Location = System::Drawing::Point(32, 83);
+			this->txt_code->Location = System::Drawing::Point(27, 194);
 			this->txt_code->Name = L"txt_code";
 			this->txt_code->Size = System::Drawing::Size(263, 20);
 			this->txt_code->TabIndex = 6;
 			// 
 			// txt_nom
 			// 
-			this->txt_nom->Location = System::Drawing::Point(32, 133);
+			this->txt_nom->Location = System::Drawing::Point(27, 244);
 			this->txt_nom->Name = L"txt_nom";
 			this->txt_nom->Size = System::Drawing::Size(264, 20);
 			this->txt_nom->TabIndex = 7;
@@ -181,7 +180,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(29, 12);
+			this->label1->Location = System::Drawing::Point(24, 128);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(26, 13);
 			this->label1->TabIndex = 8;
@@ -191,7 +190,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(24, 117);
+			this->label2->Location = System::Drawing::Point(24, 228);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(30, 13);
 			this->label2->TabIndex = 9;
@@ -199,16 +198,16 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(12, 560);
+			this->richTextBox1->Location = System::Drawing::Point(556, 552);
 			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(518, 39);
+			this->richTextBox1->Size = System::Drawing::Size(286, 47);
 			this->richTextBox1->TabIndex = 14;
 			this->richTextBox1->Text = L"";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(9, 544);
+			this->label4->Location = System::Drawing::Point(500, 569);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(50, 13);
 			this->label4->TabIndex = 15;
@@ -216,7 +215,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_end
 			// 
-			this->btn_end->Location = System::Drawing::Point(262, 211);
+			this->btn_end->Location = System::Drawing::Point(273, 293);
 			this->btn_end->Name = L"btn_end";
 			this->btn_end->Size = System::Drawing::Size(46, 23);
 			this->btn_end->TabIndex = 16;
@@ -226,7 +225,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_next
 			// 
-			this->btn_next->Location = System::Drawing::Point(179, 211);
+			this->btn_next->Location = System::Drawing::Point(190, 293);
 			this->btn_next->Name = L"btn_next";
 			this->btn_next->Size = System::Drawing::Size(46, 23);
 			this->btn_next->TabIndex = 17;
@@ -236,7 +235,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_previous
 			// 
-			this->btn_previous->Location = System::Drawing::Point(103, 211);
+			this->btn_previous->Location = System::Drawing::Point(95, 293);
 			this->btn_previous->Name = L"btn_previous";
 			this->btn_previous->Size = System::Drawing::Size(46, 23);
 			this->btn_previous->TabIndex = 18;
@@ -246,7 +245,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_first
 			// 
-			this->btn_first->Location = System::Drawing::Point(21, 211);
+			this->btn_first->Location = System::Drawing::Point(12, 293);
 			this->btn_first->Name = L"btn_first";
 			this->btn_first->Size = System::Drawing::Size(46, 23);
 			this->btn_first->TabIndex = 19;
@@ -267,7 +266,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(24, 67);
+			this->label5->Location = System::Drawing::Point(24, 178);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(63, 13);
 			this->label5->TabIndex = 26;
@@ -279,7 +278,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
 			this->AutoSize = true;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
 			this->Controls->Add(this->label5);

@@ -250,7 +250,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label14->Font = (gcnew System::Drawing::Font(L"Gadugi", 32.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label14->ForeColor = System::Drawing::Color::SlateGray;
-			this->label14->Location = System::Drawing::Point(413, 12);
+			this->label14->Location = System::Drawing::Point(306, 9);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(467, 51);
 			this->label14->TabIndex = 40;
@@ -261,7 +261,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->dgv_enr->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dgv_enr->Location = System::Drawing::Point(469, 85);
 			this->dgv_enr->Name = L"dgv_enr";
-			this->dgv_enr->Size = System::Drawing::Size(568, 214);
+			this->dgv_enr->Size = System::Drawing::Size(568, 437);
 			this->dgv_enr->TabIndex = 0;
 			this->dgv_enr->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VueStats::dgv_enr_CellContentClick);
 			// 
