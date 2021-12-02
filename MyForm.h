@@ -9,6 +9,7 @@
 #include "VueFacturePDF.h"
 #include "VueSimVar.h"
 #include "VueStats.h"
+#include "VuePaiement.h"
 
 
 namespace ProjetProgrammationOrientéeObjetProgramme {
@@ -64,6 +65,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: DevExpress::XtraEditors::SeparatorControl^ separatorControl2;
 	private: System::Windows::Forms::Button^ button10;
 	private: System::Windows::Forms::Button^ button11;
+	private: System::Windows::Forms::Button^ button12;
 
 
 
@@ -101,6 +103,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->separatorControl2 = (gcnew DevExpress::XtraEditors::SeparatorControl());
 			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->button12 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->separatorControl1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->separatorControl2))->BeginInit();
@@ -109,9 +112,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button3
 			// 
 			this->button3->BackColor = System::Drawing::SystemColors::Control;
-			this->button3->Location = System::Drawing::Point(27, 79);
+			this->button3->Location = System::Drawing::Point(27, 127);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(273, 52);
+			this->button3->Size = System::Drawing::Size(273, 28);
 			this->button3->TabIndex = 25;
 			this->button3->Text = L"Gestion des adresses";
 			this->button3->UseVisualStyleBackColor = false;
@@ -122,7 +125,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->button2->BackColor = System::Drawing::SystemColors::Control;
 			this->button2->Location = System::Drawing::Point(27, 21);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(273, 52);
+			this->button2->Size = System::Drawing::Size(273, 26);
 			this->button2->TabIndex = 24;
 			this->button2->Text = L"Gestion de Clients";
 			this->button2->UseVisualStyleBackColor = false;
@@ -130,7 +133,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::SystemColors::Control;
+			this->button1->BackColor = System::Drawing::Color::SteelBlue;
 			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->button1->Cursor = System::Windows::Forms::Cursors::Default;
 			this->button1->Location = System::Drawing::Point(27, 553);
@@ -144,9 +147,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button4
 			// 
 			this->button4->BackColor = System::Drawing::SystemColors::Control;
-			this->button4->Location = System::Drawing::Point(27, 137);
+			this->button4->Location = System::Drawing::Point(27, 161);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(273, 52);
+			this->button4->Size = System::Drawing::Size(273, 28);
 			this->button4->TabIndex = 27;
 			this->button4->Text = L"Gestion des villes";
 			this->button4->UseVisualStyleBackColor = false;
@@ -155,9 +158,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button5
 			// 
 			this->button5->BackColor = System::Drawing::SystemColors::Control;
-			this->button5->Location = System::Drawing::Point(27, 369);
+			this->button5->Location = System::Drawing::Point(27, 285);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(273, 52);
+			this->button5->Size = System::Drawing::Size(273, 30);
 			this->button5->TabIndex = 28;
 			this->button5->Text = L"Gestion du catalogue";
 			this->button5->UseVisualStyleBackColor = false;
@@ -166,9 +169,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button6
 			// 
 			this->button6->BackColor = System::Drawing::SystemColors::Control;
-			this->button6->Location = System::Drawing::Point(27, 311);
+			this->button6->Location = System::Drawing::Point(27, 53);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(273, 52);
+			this->button6->Size = System::Drawing::Size(273, 29);
 			this->button6->TabIndex = 29;
 			this->button6->Text = L"Gestion du personnel";
 			this->button6->UseVisualStyleBackColor = false;
@@ -177,9 +180,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button7
 			// 
 			this->button7->BackColor = System::Drawing::SystemColors::Control;
-			this->button7->Location = System::Drawing::Point(27, 195);
+			this->button7->Location = System::Drawing::Point(27, 249);
 			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(273, 52);
+			this->button7->Size = System::Drawing::Size(273, 30);
 			this->button7->TabIndex = 30;
 			this->button7->Text = L"Gestion des commandes";
 			this->button7->UseVisualStyleBackColor = false;
@@ -198,9 +201,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button9
 			// 
 			this->button9->BackColor = System::Drawing::SystemColors::Control;
-			this->button9->Location = System::Drawing::Point(27, 253);
+			this->button9->Location = System::Drawing::Point(27, 321);
 			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(273, 52);
+			this->button9->Size = System::Drawing::Size(273, 32);
 			this->button9->TabIndex = 32;
 			this->button9->Text = L"Gestion des factures";
 			this->button9->UseVisualStyleBackColor = false;
@@ -258,9 +261,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button10
 			// 
 			this->button10->BackColor = System::Drawing::SystemColors::Control;
-			this->button10->Location = System::Drawing::Point(27, 485);
+			this->button10->Location = System::Drawing::Point(27, 461);
 			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(273, 52);
+			this->button10->Size = System::Drawing::Size(273, 34);
 			this->button10->TabIndex = 37;
 			this->button10->Text = L"Simulation de valeurs";
 			this->button10->UseVisualStyleBackColor = false;
@@ -269,13 +272,24 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button11
 			// 
 			this->button11->BackColor = System::Drawing::SystemColors::Control;
-			this->button11->Location = System::Drawing::Point(27, 427);
+			this->button11->Location = System::Drawing::Point(27, 423);
 			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(273, 52);
+			this->button11->Size = System::Drawing::Size(273, 32);
 			this->button11->TabIndex = 38;
 			this->button11->Text = L"Gestion des statistiques";
 			this->button11->UseVisualStyleBackColor = false;
 			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click);
+			// 
+			// button12
+			// 
+			this->button12->BackColor = System::Drawing::SystemColors::Control;
+			this->button12->Location = System::Drawing::Point(27, 359);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(273, 32);
+			this->button12->TabIndex = 39;
+			this->button12->Text = L"Gestion des paiements";
+			this->button12->UseVisualStyleBackColor = false;
+			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
 			// 
 			// MyForm
 			// 
@@ -284,6 +298,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
+			this->Controls->Add(this->button12);
 			this->Controls->Add(this->button11);
 			this->Controls->Add(this->button10);
 			this->Controls->Add(this->separatorControl2);
@@ -383,6 +398,12 @@ private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ 
 	this->Show();
 
 
+}
+private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Hide();
+	VuePaiement VuePaiement;
+	VuePaiement.ShowDialog();
+	this->Show();
 }
 };
 }
