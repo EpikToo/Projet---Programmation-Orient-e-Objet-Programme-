@@ -65,7 +65,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: NS_Comp_Svc5::CLservices^ processusPersonnes;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
+
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::TextBox^ txt_date;
 	private: System::Windows::Forms::TextBox^ textBox4;
@@ -85,7 +85,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: System::Windows::Forms::Label^ label11;
 	private: System::Windows::Forms::Label^ label12;
 	private: System::Windows::Forms::Label^ label13;
-	private: System::Windows::Forms::Label^ label14;
+
 
 
 
@@ -127,7 +127,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->btn_first = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->txt_date = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
@@ -145,7 +144,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->label14 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -317,17 +315,10 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(32, 216);
+			this->textBox1->Location = System::Drawing::Point(31, 177);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(243, 20);
 			this->textBox1->TabIndex = 21;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(31, 177);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(243, 20);
-			this->textBox2->TabIndex = 22;
 			// 
 			// textBox3
 			// 
@@ -475,16 +466,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label13->TabIndex = 40;
 			this->label13->Text = L"Ville";
 			// 
-			// label14
-			// 
-			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(32, 200);
-			this->label14->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(72, 13);
-			this->label14->TabIndex = 41;
-			this->label14->Text = L"Type Adresse";
-			// 
 			// VuePersonnel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
@@ -493,7 +474,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
-			this->Controls->Add(this->label14);
 			this->Controls->Add(this->label13);
 			this->Controls->Add(this->label12);
 			this->Controls->Add(this->label11);
@@ -511,7 +491,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->txt_date);
 			this->Controls->Add(this->textBox3);
-			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->btn_first);
