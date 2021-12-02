@@ -231,6 +231,9 @@
     <ClInclude Include="VueAdresses.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="VueArticle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="VueCatalogue.h">
       <FileType>CppForm</FileType>
     </ClInclude>
