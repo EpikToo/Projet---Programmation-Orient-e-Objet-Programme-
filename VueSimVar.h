@@ -54,8 +54,8 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 
 
 
-	private: System::Windows::Forms::RichTextBox^ richTextBox1;
-	private: System::Windows::Forms::Label^ label4;
+
+
 
 
 
@@ -156,8 +156,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		void InitializeComponent(void)
 		{
 			this->dgv_enr = (gcnew System::Windows::Forms::DataGridView());
-			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
@@ -193,27 +191,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->dgv_enr->Size = System::Drawing::Size(611, 468);
 			this->dgv_enr->TabIndex = 0;
 			this->dgv_enr->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &SimVar::dgv_enr_CellContentClick);
-			// 
-			// richTextBox1
-			// 
-			this->richTextBox1->Location = System::Drawing::Point(566, 552);
-			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(301, 57);
-			this->richTextBox1->TabIndex = 14;
-			this->richTextBox1->Text = L"";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->BackColor = System::Drawing::Color::Transparent;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label4->Location = System::Drawing::Point(486, 568);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(74, 29);
-			this->label4->TabIndex = 15;
-			this->label4->Text = L"Message";
 			// 
 			// button2
 			// 
@@ -425,11 +402,12 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// button1
 			// 
 			this->button1->BackColor = System::Drawing::SystemColors::Window;
+			this->button1->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->button1->Location = System::Drawing::Point(44, 432);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(121, 108);
 			this->button1->TabIndex = 48;
-			this->button1->Text = L"Réinitialiser Valeur";
+			this->button1->Text = L"Afficher Résultat";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &SimVar::button1_Click_2);
 			// 
@@ -466,9 +444,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->Controls->Add(this->groupBox3);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->label14);
-			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->button2);
-			this->Controls->Add(this->label4);
 			this->Controls->Add(this->dgv_enr);
 			this->Name = L"SimVar";
 			this->Text = L"Golema";
@@ -560,7 +536,7 @@ private: System::Void button1_Click_2(System::Object^ sender, System::EventArgs^
 	this->processusPersonnes = gcnew NS_Comp_Svc15::CLservices();
 	System::String^ order = "SELECT SUM(prix_produit_HT) as 'Valeur d`achat stock' FROM Article WHERE id_commande IS NULL";
 	System::Data::SqlClient::SqlConnection^ oCnx;
-	oCnx = gcnew System::Data::SqlClient::SqlConnection("Data Source = LAPTOP-8O8JTME7\\MSSQL_PAUL;Initial Catalog = TEST6;Integrated Security=True");
+	oCnx = gcnew System::Data::SqlClient::SqlConnection("Data Source = LAPTOP-U9N5DUUS\\MSSQL_FLO;Initial Catalog = POOP;Integrated Security=True");
 	this->checkBox4->Checked = false;
 	this->checkBox5->Checked = false;
 	this->checkBox2->Checked = false;
