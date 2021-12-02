@@ -65,16 +65,20 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: Data::DataSet^ ds;
 	private: NS_Comp_Svc3::CLservices^ processusPersonnes;
 	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
-	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::TextBox^ text_nom_residence;
+	private: System::Windows::Forms::TextBox^ txt_etage;
+	private: System::Windows::Forms::TextBox^ txt_nom_rue;
 	private: System::Windows::Forms::TextBox^ txt_xcwd;
 
 
-	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::TextBox^ txt_nom_batiment;
 	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::TextBox^ txt_nom_ville;
 	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label9;
 
 
 
@@ -111,14 +115,18 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->btn_previous = (gcnew System::Windows::Forms::Button());
 			this->btn_first = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->text_nom_residence = (gcnew System::Windows::Forms::TextBox());
+			this->txt_etage = (gcnew System::Windows::Forms::TextBox());
+			this->txt_nom_rue = (gcnew System::Windows::Forms::TextBox());
 			this->txt_xcwd = (gcnew System::Windows::Forms::TextBox());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->txt_nom_batiment = (gcnew System::Windows::Forms::TextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->txt_nom_ville = (gcnew System::Windows::Forms::TextBox());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -287,26 +295,26 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &VueAdresses::button2_Click_1);
 			// 
-			// textBox1
+			// text_nom_residence
 			// 
-			this->textBox1->Location = System::Drawing::Point(29, 187);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(243, 20);
-			this->textBox1->TabIndex = 21;
+			this->text_nom_residence->Location = System::Drawing::Point(32, 180);
+			this->text_nom_residence->Name = L"text_nom_residence";
+			this->text_nom_residence->Size = System::Drawing::Size(243, 20);
+			this->text_nom_residence->TabIndex = 21;
 			// 
-			// textBox2
+			// txt_etage
 			// 
-			this->textBox2->Location = System::Drawing::Point(31, 228);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(243, 20);
-			this->textBox2->TabIndex = 22;
+			this->txt_etage->Location = System::Drawing::Point(32, 258);
+			this->txt_etage->Name = L"txt_etage";
+			this->txt_etage->Size = System::Drawing::Size(243, 20);
+			this->txt_etage->TabIndex = 22;
 			// 
-			// textBox3
+			// txt_nom_rue
 			// 
-			this->textBox3->Location = System::Drawing::Point(32, 135);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(243, 20);
-			this->textBox3->TabIndex = 23;
+			this->txt_nom_rue->Location = System::Drawing::Point(32, 135);
+			this->txt_nom_rue->Name = L"txt_nom_rue";
+			this->txt_nom_rue->Size = System::Drawing::Size(243, 20);
+			this->txt_nom_rue->TabIndex = 23;
 			// 
 			// txt_xcwd
 			// 
@@ -315,28 +323,28 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->txt_xcwd->Size = System::Drawing::Size(100, 20);
 			this->txt_xcwd->TabIndex = 0;
 			// 
-			// textBox5
+			// txt_nom_batiment
 			// 
-			this->textBox5->Location = System::Drawing::Point(32, 263);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(243, 20);
-			this->textBox5->TabIndex = 25;
+			this->txt_nom_batiment->Location = System::Drawing::Point(32, 220);
+			this->txt_nom_batiment->Name = L"txt_nom_batiment";
+			this->txt_nom_batiment->Size = System::Drawing::Size(243, 20);
+			this->txt_nom_batiment->TabIndex = 25;
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(26, 45);
+			this->label5->Location = System::Drawing::Point(29, 41);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(77, 13);
 			this->label5->TabIndex = 26;
 			this->label5->Text = L"Numéro de rue";
 			// 
-			// textBox4
+			// txt_nom_ville
 			// 
-			this->textBox4->Location = System::Drawing::Point(32, 299);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(243, 20);
-			this->textBox4->TabIndex = 27;
+			this->txt_nom_ville->Location = System::Drawing::Point(32, 299);
+			this->txt_nom_ville->Name = L"txt_nom_ville";
+			this->txt_nom_ville->Size = System::Drawing::Size(243, 20);
+			this->txt_nom_ville->TabIndex = 27;
 			// 
 			// textBox6
 			// 
@@ -344,6 +352,42 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(243, 20);
 			this->textBox6->TabIndex = 28;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(29, 164);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(78, 13);
+			this->label6->TabIndex = 29;
+			this->label6->Text = L"Nom résidence";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(29, 203);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(87, 13);
+			this->label7->TabIndex = 30;
+			this->label7->Text = L"Nom du bâtiment";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(29, 243);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(35, 13);
+			this->label8->TabIndex = 31;
+			this->label8->Text = L"Étage";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(29, 283);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(26, 13);
+			this->label9->TabIndex = 32;
+			this->label9->Text = L"Ville";
 			// 
 			// VueAdresses
 			// 
@@ -353,13 +397,17 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1049, 611);
+			this->Controls->Add(this->label9);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->textBox6);
-			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->txt_nom_ville);
 			this->Controls->Add(this->label5);
-			this->Controls->Add(this->textBox5);
-			this->Controls->Add(this->textBox3);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->txt_nom_batiment);
+			this->Controls->Add(this->txt_nom_rue);
+			this->Controls->Add(this->txt_etage);
+			this->Controls->Add(this->text_nom_residence);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->btn_first);
 			this->Controls->Add(this->btn_previous);
@@ -406,6 +454,10 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		this->txt_id->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[0]);
 		this->txt_numero_rue->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[1]);
 		this->txt_numero_logement->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[2]);
+		this->txt_nom_rue->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[3]);
+		this->text_nom_residence->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[4]);
+		this->txt_nom_batiment->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[5]);
+		this->txt_etage->Text = Convert::ToString(this->ds->Tables["liste"]->Rows[this->index]->ItemArray[6]);
 	}
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -413,7 +465,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	}
 	private: System::Void btn_insert_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		this->oSvc->ajouterUneAdresse(Convert::ToInt32(this->txt_numero_rue->Text), Convert::ToInt32(this->txt_numero_logement->Text), this->txt_numero_logement->Text, this->textBox1->Text, this->textBox3->Text, Convert::ToInt32(this->textBox2->Text), this->textBox5->Text, this->textBox4->Text, Convert::ToInt32(this->textBox6->Text));
+		this->oSvc->ajouterUneAdresse(Convert::ToInt32(this->txt_numero_rue->Text), Convert::ToInt32(this->txt_numero_logement->Text), this->txt_nom_rue->Text, this->text_nom_residence->Text, this->txt_nom_batiment->Text, Convert::ToInt32(this->txt_etage->Text), this->txt_nom_ville->Text);
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -429,7 +481,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 		this->oSvc->supprimerUneAdresse(Convert::ToInt32(this->txt_id->Text));
 	}
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->modifierUneAdresse(Convert::ToInt32(this->txt_id->Text), Convert::ToInt32(this->txt_numero_rue->Text), Convert::ToInt32(this->txt_numero_logement->Text), this->txt_numero_logement->Text, this->textBox1->Text, this->textBox3->Text, Convert::ToInt32(this->textBox2->Text), this->textBox5->Text, this->textBox4->Text, Convert::ToInt32(this->textBox6->Text));
+		this->oSvc->modifierUneAdresse(Convert::ToInt32(this->txt_id->Text), Convert::ToInt32(this->txt_numero_rue->Text), Convert::ToInt32(this->txt_numero_logement->Text), this->txt_nom_rue->Text, this->text_nom_residence->Text, this->txt_nom_batiment->Text, Convert::ToInt32(this->txt_etage->Text), this->txt_nom_ville->Text);
 	}
 	private: System::Void btn_first_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->index = 0;

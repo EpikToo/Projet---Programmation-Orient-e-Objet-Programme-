@@ -12,9 +12,8 @@ namespace NS_Comp_Mappage3
 		System::String^ nom_residence;
 		System::String^ nom_batiment;
 		System::Int32^ etage;
-		System::String^ type_adresse1;
 		System::String^ nom_ville;
-		System::Int32^ id_client;
+		
 
 	public:
 		System::String^ Select(void) override;
@@ -29,9 +28,8 @@ namespace NS_Comp_Mappage3
 		void setNom_Residence(System::String^);
 		void setNom_batiment(System::String^);
 		void setEtage(System::Int32^);
-		void setType_adresse1(System::String^);
 		void setNom_ville(System::String^);
-		void setId_client(System::Int32^);
+		
 
 		System::Int32^ getId(void);
 	};
