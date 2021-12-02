@@ -75,9 +75,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 	private: System::Windows::Forms::Label^ label9;
-	private: System::Windows::Forms::Button^ button1;
+
 	private: DevExpress::XtraEditors::DateEdit^ txt_date_anniversaire;
 	private: System::Windows::Forms::Label^ label10;
 	private: System::Windows::Forms::Label^ label11;
@@ -163,8 +163,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->txt_date_anniversaire = (gcnew DevExpress::XtraEditors::DateEdit());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
@@ -198,7 +196,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label24 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txt_date_anniversaire->Properties->CalendarTimeProperties))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txt_date_anniversaire->Properties))->BeginInit();
 			this->SuspendLayout();
@@ -206,9 +203,9 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// dgv_enr
 			// 
 			this->dgv_enr->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dgv_enr->Location = System::Drawing::Point(559, 103);
+			this->dgv_enr->Location = System::Drawing::Point(375, 103);
 			this->dgv_enr->Name = L"dgv_enr";
-			this->dgv_enr->Size = System::Drawing::Size(365, 398);
+			this->dgv_enr->Size = System::Drawing::Size(549, 398);
 			this->dgv_enr->TabIndex = 0;
 			this->dgv_enr->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VueClients::dgv_enr_CellContentClick);
 			// 
@@ -303,7 +300,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_end
 			// 
-			this->btn_end->Location = System::Drawing::Point(859, 507);
+			this->btn_end->Location = System::Drawing::Point(859, 508);
 			this->btn_end->Name = L"btn_end";
 			this->btn_end->Size = System::Drawing::Size(65, 24);
 			this->btn_end->TabIndex = 16;
@@ -313,7 +310,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_next
 			// 
-			this->btn_next->Location = System::Drawing::Point(765, 507);
+			this->btn_next->Location = System::Drawing::Point(696, 508);
 			this->btn_next->Name = L"btn_next";
 			this->btn_next->Size = System::Drawing::Size(55, 24);
 			this->btn_next->TabIndex = 17;
@@ -323,7 +320,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_previous
 			// 
-			this->btn_previous->Location = System::Drawing::Point(664, 507);
+			this->btn_previous->Location = System::Drawing::Point(521, 508);
 			this->btn_previous->Name = L"btn_previous";
 			this->btn_previous->Size = System::Drawing::Size(60, 24);
 			this->btn_previous->TabIndex = 18;
@@ -333,7 +330,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			// 
 			// btn_first
 			// 
-			this->btn_first->Location = System::Drawing::Point(559, 508);
+			this->btn_first->Location = System::Drawing::Point(375, 508);
 			this->btn_first->Name = L"btn_first";
 			this->btn_first->Size = System::Drawing::Size(65, 24);
 			this->btn_first->TabIndex = 19;
@@ -433,30 +430,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label6->Size = System::Drawing::Size(51, 13);
 			this->label6->TabIndex = 28;
 			this->label6->Text = L"Nouveau";
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
-				static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->pictureBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->pictureBox1->Location = System::Drawing::Point(345, 42);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(169, 132);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 28;
-			this->pictureBox1->TabStop = false;
-			this->pictureBox1->Tag = L"";
-			this->pictureBox1->Click += gcnew System::EventHandler(this, &VueClients::pictureBox1_Click);
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(394, 186);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(69, 23);
-			this->button1->TabIndex = 29;
-			this->button1->Text = L"Parcourir";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &VueClients::button1_Click_1);
 			// 
 			// txt_date_anniversaire
 			// 
@@ -579,7 +552,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->label14->Font = (gcnew System::Drawing::Font(L"Gadugi", 32.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label14->ForeColor = System::Drawing::Color::SlateGray;
-			this->label14->Location = System::Drawing::Point(550, 23);
+			this->label14->Location = System::Drawing::Point(476, 24);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(374, 51);
 			this->label14->TabIndex = 40;
@@ -834,9 +807,7 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			this->Controls->Add(this->label11);
 			this->Controls->Add(this->label10);
 			this->Controls->Add(this->txt_date_anniversaire);
-			this->Controls->Add(this->button1);
 			this->Controls->Add(this->richTextBox1);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->txt_prenom);
 			this->Controls->Add(this->txt_email);
@@ -858,7 +829,6 @@ namespace ProjetProgrammationOrientéeObjetProgramme {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->EndInit();
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txt_date_anniversaire->Properties->CalendarTimeProperties))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txt_date_anniversaire->Properties))->EndInit();
 			this->ResumeLayout(false);
